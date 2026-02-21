@@ -1,5 +1,6 @@
+Troubleshooting (Each Line count as 1)
 
-Troubleshooting
+
 Battery 4G::Hardware::Physical damage to camera itself
 
 Battery 4G::Alert::Smart detection doesn't work
