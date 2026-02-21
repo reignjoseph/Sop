@@ -1,0 +1,3335 @@
+test
+If there are too many devices connected to the router, disconnect 2-3 devices.
+
+
+test
+Please take a screenshot of the System Status after several failed attempts and send it to us.
+Please ensure that the screenshot is captured after several failed attempts.
+Check System Status via Reolink App
+Check the System Status via Reolink Client
+test
+If you are using an iPhone or iPad, please enable Local Network access in System Settings>App>Reolink.
+Applicable only to iOS devices. If it is already enabled, turn it off and then back on. Restart the phone and try accessing it again.
+test
+Could you please let us know the carrier of the SIM card in the phone experiencing the issue?
+If the problematic phone's carrier is Iliad or Rakuten, there's no need to complete the entire SOP. After comforting the customer, please transfer to RMA team for alternative solutions, as this is a known issue with no technical solution.
+test
+Could you please send us the app logs for troubleshooting?
+1.Reproduce the issue before exporting the log.
+2.Find log referring to: How to Check Reolink App/Client Logs for Troubleshooting
+setup
+Please check that the push-related settings are configured correctly:
+1.In the phone system settings, allow the Reolink App to receive push notifications. How to Enable Push Notifications on iOS and Android Phones
+2.Ensure the push switch is turned on in the Reolink App and a valid push schedule is configured. How to Set up Push Schedule via Reolink App
+3.Additional checks for Android devices: Make sure Do Not Disturb, Data Saver, and Battery Optimization features are turned off, as they may affect background push notifications.
+test
+Please help perform a test to verify that the device is properly connected to the Push server:
+Not Applicable for 4G models.
+How to verify: Connect your mobile phone to the same network as the camera, then open the browser and visit: https://pushx.reolink.com/ and https://devices-apis.reolink.com.
+Normal: A response code similar to the following appears: {"status":{"code":1,"detail":"Specific API doesn't exist."}}.
+Abnormal: If the page keeps loading or no response code is returned, it indicates an issue.
+
+
+
+
+
+
+test
+
+Please uninstall and then reinstall the app, and make sure you have saved the camera UID, username, and password before doing so.
+
+
+setup
+If the camera in question is working with the Home Hub, please delete all Home Hub scene modes.
+Introduction to Scene Mode for Reolink Home Hub
+If everything works normally after deletion, remind the customer that when re-enabling the Home Hub scene mode, they need to ensure that the Recording/FTP/Email/Push/Home Hub Ring/Siren/Auto Tracking switch for the camera is turned on in the scene mode settings. Applicable to situations where any alarm actions such as Recording/FTP/Email/Push/Home Hub Ring/Siren/Auto Tracking are not working.
+description
+Please help check if the issue is related to the device or stream type by switching Wi-Fi/cellular, changing live stream modes, or testing on different platforms (App, Client, web, or NVR monitor).
+1.Have already tried to switch wifi/cellular data on phone/pc, live stream mode (Clear/Fluent) but still does not work
+2.Same issue on different software (App/Client/web/NVR monitor)
+*Battery-powered camera does not support web/NVR
+test
+Please disable any firewall, antivirus software, VPN, or proxy on your mobile phone, computer, or router.
+
+
+test
+If you have multiple routers or switches in your network, please try a simple test by connecting the camera directly to one of them.
+1.Not too many devices, suggest customer to reduce and try again.
+2.Connecting the camera to a router/switch.
+test
+Please close the app/client completely (make sure it is not running in the background) and then reopen it.
+
+
+test
+If there is water inside the lens or fogging, keep it powered on and well-ventilated:
+1.For models with an SD card slot, such as the E1 Outdoor series, open the SD card slot cover and keep it powered on for several hours.
+2.For models without an SD card, such as bundled cameras, unscrew the screws at the back and keep it powered on for several hours.
+3.For models with an SD card slot, but the slot is inside the machine and the SD card slot has no cover (RLC-422/RLC-422W/RLC-842A/RLC-542WA), please open the lens cover for ventilation.
+test
+If there is water or fog outside the lens, wipe the lens dry and keep it powered on for a few hours.
+a.If resolved, additionally confirm that power on/off, Wi-Fi connection, charging, infrared, spotlight, and software functions are all normal. This is to avoid any problems with the device board due to water entering.
+b.If the issue is not resolved, transfer to the RMA team for other possible solutions(Replacement might not fix the issue).
+test
+Please restore the NVR to its default settings.
+How to Restore via Reolink NVR (New UI)
+test
+Please verify on the network status page that the device shows a valid gateway.
+When the gateway is 0.0.0.0, we suggest the following steps for the customer:
+1.Test with a new, verified working Ethernet cable between the NVR and the router.
+2.If the NVR is not directly connected to the router (for example, if there's a switch in between or if the NVR is connected to an Ethernet socket), please connect the NVR directly to the router.
+If, after completing the steps above, the gateway still shows as 0.0.0.0, please forward the case to the RMA team for warranty handling directly. There is no need to proceed with the following tasks. If the customer is unwilling to perform these steps, also forward the case to the RMA team, but remind the customer that we cannot guarantee a replacement will fix the issue.
+test
+Please unplug and then replug the network cable.
+
+
+setup
+Please make sure the UID is enabled, and note that it needs to be turned on via the monitor or Reolink Client.
+For 9527 UID, refer to: How to Enable UID for Reolink Products
+For XCPTP UID, Please use Macro [Tech::Device::NVR::D130 Change to Line 1 for NVRs with UID XCPTP].
+setup
+Please ensure a compliant network cable is used and that it is securely connected (you should hear a click).
+What Ethernet Cable Can Work with Reolink Cameras
+test
+Please replace the Ethernet cable and connect the camera/NVR to a different network port.
+
+
+test
+Please replace the current monitor with another one to test.
+
+
+setup
+Make sure the monitor you are using has a resolution of at least 720p.
+
+
+test
+Please follow the instructions for your NVR's hardware version to perform a force upgrade.
+Applicable when NVR cannot be displayed on all terminals or when a standard firmware upgrade procedure fails. Macro keyword: force upgrade.
+setup
+Please make sure the HDMI/VGA cable is less than 15 meters in length.
+
+
+setup
+Please make sure the HDD cable is firmly connected and, as HDDs do not support hot swapping, power off the NVR/Home Hub Pro before installing the HDD, then power it on again.
+NVR: How to Unplug/Plug Internal HDD Cable of the Reolink PoE NVR and Connect the External HDD to the PoE NVR (Video)
+Home Hub Pro: How to Install a Hard Drive in Reolink Home Hub Pro
+test
+Please try opening the NVR casing, disconnecting the hard drive, and then check whether the NVR powers on normally.
+How to Unplug/Plug Internal HDD Cable of the Reolink PoE NVR and Connect the External HDD to the PoE NVR (Video)
+If NVR powers on:
+1.Suggest upgrading the NVR to the latest firmware. Reconnect the HDD to see if the issue persists.
+2.Confirm whether the HDD is an original Reolink HDD; if not, test with another known-good HDD.
+If issue remains, RMA the HDD.
+If NVR still doesn't power on: RMA the NVR.
+test
+If possible, please try another HDD in the NVR to see whether the issue is related to the hard drive or the NVR itself.
+[Applicable for HDD not recognized/0GB/no recording/unable to format issues]
+a. If there is no other HDD to test, transfer to RMA to replace the HDD.
+b. If another HDD can be recognized and works, transfer to RMA to replace the HDD.
+c. If another HDD is also not recognized, transfer to RMA to replace the NVR/Home Hub.
+setup
+Please try disconnecting all directly connected cameras and see if the NVR powers on normally.
+Purpose: Rule out system overload caused by connected cameras.
+Disconnect all cameras physically connected to the NVR’s ports and check if NVR resumes power.
+If this solves the issue:
+1.Determine if models like 823A, which have higher power demand, were overloading the system.
+2.Reconnect cameras one by one to isolate the specific camera that may be causing shutdown.
+3.If a particular camera causes the NVR to power off, RMA the camera.
+test
+Please update the affected camera to the latest firmware.
+How to Check and Update Reolink Device Firmware
+setup
+Please make sure you are using the original power adapter, or another adapter with the same power specifications.
+Purpose: Rule out issues caused by non-compliant or faulty power adapters.
+1.Use the original Reolink power adapter. If using a third-party adapter, ensure it meets the required power specs (e.g. DC 12.0V⎓1A, <12W). Specs can be found on the Specs page. >>> rlc-810wa/#specifications
+2.If the adapter for NVR has a power indicator, check that it is lit to confirm the adapter is working properly.
+setup
+Please test the camera using a known-working Ethernet cable and network port to ensure they are functioning properly.
+1.Swap the cables and ports with a working camera to test
+2.Use a known-good cable and port to test
+test
+We recommend updating NVR to the latest firmware version to ensure the camera is in good condition.
+How to Check and Update Reolink Device Firmware
+setup
+Please make sure the camera is not already connected to the maximum number of devices, as this may prevent it from being added to the NVR.
+1.Camera in NVR kit: when this camera is connected to the router to be set up and live viewed on the client/app, it can no longer be added to the NVR
+2.Camera supports connecting up to 12 streams for simultaneous preview: 2 main streams and 10 sub-streams. If camera is connected to two NVRs, adding it to the third NVR is not supported because adding it to the NVR will occupy a main stream.
+setup
+Please make sure that the number of remaining available channels is more than the number required by the camera.
+For example, the Duo PoE/WiFi (first generation) needs to occupy 2 channels, if there is only one channel left, it cannot be added successfully
+test
+If it shows "incorrect username or password": double-confirm if the username and password are correct.
+Try to use "admin" as username, and leave the password blank
+test
+To fix the issue, I have pushed a firmware update to your camera that adds support for the Home Hub/NVR. Please tap the update button to install the firmware.
+Online Reolink Firmware Upgrade via Reolink Software
+test
+Please provide the System Information page of this camera, and ensure the screenshot clearly displays the UID, hardware version, and firmware version.
+How to Find out Reolink Device System Information
+test
+If the camera is connected to the Hub's 5GHz WiFi, try switching it to the Hub's 2.4GHz WiFi to see if there is any improvement, and vice versa.
+
+
+test
+Please adjust the positions of the camera, Home Hub, and router:
+1.Keep the Home Hub and router a reasonable distance apart, otherwise the camera may not connect to either stably.
+2.Place the camera as close as possible to the signal source (the WiFi it connects to, either the Hub or the router) and avoid placing it behind load-bearing walls.
+
+
+
+
+
+
+test
+If the camera is connected to the router's WiFi, please try switching it to the Hub's WiFi to see if there is any improvement, and vice versa.
+How to Change Wi-Fi for Reolink Wi-Fi Cameras
+test
+Please adjust the WiFi channel of Home Hub‘s WiFi.
+How to Change Wi-Fi Channel on Reolink Home Hub
+2.4GHz: Try channels 1, 6, and 11.
+5GHz: Set it to Auto or try a channel between 36 and 48.
+setup
+Please update the Reolink Client/App to the latest version.
+1.The client runs with administrator privileges
+2.Please note the complete version number in this field
+Check the latest version number of Reolink App(iOS)
+Check the latest version number of Reolink App(Android)
+Check the latest version number of Reolink Client
+test
+To rule out an issue with a specific device, could you try accessing the camera using a different phone or computer?
+For the connection problem, we can test the UID on app/client to verify.
+test
+If an extension cord is used with the camera, please remove the extension cord.
+Some devices come with a 4.5m power extension cord.
+setup
+If the camera is powered on and connected to the network, it should be detected in the Reolink App or Client, where you can also view its UID.
+
+
+test
+During the initial setup, the QR code was automatically saved to your phone's photo gallery. Could you check your gallery to see if the QR code was saved?
+
+
+setup
+If you have registered the camera for warranty, you can check whether the UID is recorded there.
+Check Your Registered Products
+test
+To help us reproduce this issue, please provide a topology diagram if possible.
+Applicable only if the issue remains unresolved or when an L2 escalation is required
+test
+Could you please move the camera closer to the source WiFi or swap positions with other devices?
+The signal source refers to the WiFi that the camera is connected to (WiFi from the router, Home Hub, or WiFi extender). For example, if the camera is connected to the router's WiFi, try moving the camera closer to the router.
+test
+Could you please try to change WiFi frequency band and WiFi channel and see if it helps?
+If it's a dual-band WiFi, switching 2.4G and 5G WiFi for testing
+change wifi: How to Change WiFi for Battery-Powered and WiFi Cameras via Reolink App
+change wifi channel: eg. How do I change the wireless channel on my NETGEAR router?
+test
+Adjust the lens angle
+For machines with a glass cover, lift the lens up to expose the IR lamp beads below, rather than hiding them at the edge. Reference link: Adjust the Viewing Angle of Reolink RLC-422/RLC-422W
+description
+The customer noticed that the product increased on the official website, requesting to provide the previous price, which is lower (e.g. the price of the last order, the price of a previous promotion)
+1. Request a screenshot showing the previous price, and explain that price fluctuations are normal due to changes in stock.
+2. If the order has been placed, confirm the price has indeed increased. If the customer insists, we can match the price within one week
+Note: Excluding prices during Black Friday/Cyber ​​Monday/Anniversary Sale promotions.
+Over a week, please refer to the standard [Extra Discount] procedure to provide the coupon for future purchases.
+3. If the order has not been placed, please refer to the standard [Extra Discount] procedure to provide the coupon.
+If the issue remains unsolved or the customer refuses to accept, please confirm the country, the screenshot of the price increase, and escalate to Pre-sale L2
+
+
+
+
+
+
+description
+The checkout page on the Reolink official website prompts that the coupon is not available in the current shopping cart.
+2.1 Confirm if the customer is a Reolink business customer(Reolink reseller/distributor)
+If yes: It's normal that the Reolink business customer can't apply the coupons, as the business account already enjoys the benefits.
+If not:
+1)Check if the products include a professional series.
+If yes, it's normal that the coupon can't be used.
+Note: Professional series products can't apply to general coupons.
+Suggest ordering separately.
+2)Check if the products already applied the "Buy more save more" discount,
+Note: If the current total amount has met the "Buy More Save More" requirement, the system will automatically apply the discount. This can't be removed manually. Inform the customer that one order can only apply for one discount, so it is normal that the coupon cannot be used.
+Suggest ordering separately.
+If the issue remains unresolved or the customer can't accept, confirm the country and specific coupon code, please escalate to Presale-L2
+description
+The checkout page on the Reolink official website prompts that the coupon has reached the usage limitation, exceeded the usage limitation, or has already been used.
+The coupon code can only be used one time; the above prompt information indicates that the coupon has been used in a pending order.
+1)Guide the customer to find the pending order to proceed with the payment via this link:https://reolink.com/my-account/orders/
+2) Inform that the pending order will be automatically canceled if the payment is not completed within 24 hours
+test
+Could you please let us know the brand and model of your router?
+Applicable only if the issue remains unresolved or when an L2 escalation is required
+setup
+Could you please reboot both the router and the device experiencing the issue and see if it helps?
+
+
+test
+Please test the camera in a simple network environment by connecting it directly to the router or hotspot, with no mesh/extender/booster in between, and temporarily disconnect all other devices to check whether the issue persists.
+a. Forward to RMA but do not suggest a replacement if this tip helps (as this issue might be caused by the customer's home network)
+b. Follow the final solution if this doesn't help
+test
+Could you please log in to your router and check the MAC address filtering settings?
+If customer‘s router has MAC address filtering enabled — for example, if it’s set to only allow certain devices to connect (a whitelist) — this may prevent the camera from connecting. Please log in to your router to check the settings.
+test
+Could you please try connecting the device to a different hotspot or another router’s WiFi to check if the issue is resolved?
+Yes – The issue is related to the specific router. We recommend contacting the router’s support team.
+No – Proceed with a replacement.
+setup
+Please make sure the SSID and WiFi password is entered correctly. The SSID should be no more than 31 digits, and the password should be 8–63 digits.
+1.Directly log in to the router interface for verification to check the SSID and pwd.
+2.Differentiate between the router login pwd and WiFi pwd, especially for German customers using Fritzbox routers.
+3.Advise technically adept customers to temporarily disconnect and reconnect WiFi on other devices to confirm knowledge of the correct SSID and pwd.
+description
+The camera plays a voice prompt saying "Connection to the router failed", or the app shows text error message "WiFi Connection Failed".
+Reolink Connection to Router Failed
+setup
+Please kindly check your router’s wireless encryption. Reolink WiFi cameras do not support WEP, while WPA/WPA2 works properly.
+
+
+setup
+Could you please double-check whether your WiFi is dual-band or 2.4 GHz? Some models only support 2.4 GHz WiFi.
+
+
+test
+Could you please move the camera closer to the router and check again?
+
+
+setup
+To help us narrow down whether the issue is caused by a specific device or network, could you please try accessing the camera from another phone or computer, or by connecting your phone to a different network?
+
+
+setup
+Please ensure the camera lens is clear and align your phone with the QR code at a proper distance for optimal scanning.
+1.Make sure there is no protective film or obstruction on the camera lens.
+2.Increase your phone screen brightness, enlarge the QR code if possible, and perform the setup indoors to reduce glare.
+3.Align the phone screen and camera lens on the same plane, keeping a distance of about 20 cm (8 inches).
+Troubleshooting - Camera Failed to Scan the QR Code on the Phone App
+setup
+If your camera also supports Bluetooth pairing, please reset it and use the Bluetooth pairing method to configure the network.
+Applies only to models that support Bluetooth pairing, such as the Lumus series and the E1 series. For more models, please refer to the "Applies to" section of the article: How to Configure Wi-Fi Connection for Reolink Cameras via Bluetooth
+test
+Please check whether the adapter can charge other devices, such as another camera or a phone, properly.
+
+
+test
+Please power off the device and charge it for 4–6 hours until fully charged, then turn it back on to check if it works normally.
+
+
+setup
+Please ensure the charging cable is correctly inserted into the charging port and the charging indicator light is on.
+Orange means charging, green means fully charged. If flashing orange and green, transfer to SOP [Battery problem (battery lights flash Green and Orange alternately or off)]
+
+
+
+
+
+
+test
+Please enable the ‘Reduce False Alarms’ option if it is available on your model.
+This feature is on Reolink App only, and not applicable for all models. If customer can't find this option on his camera, skip this task.
+PIR False Alarms of Reolink Battery-powered Cameras
+test
+For optimal PIR detection performance, please adjust the camera’s installation angle, height, and distance.
+Please keep a proper angle between the battery camera and the detection area. Radial installation is not recommended, and the mounting height should be no higher than 3 meters. Refer to: Reolink Camera Installation Tips
+test
+Could you please provide photos of the camera installation and a preview image?
+How to Adjust PIR Sensor Angle
+setup
+Please make sure the PIR sensitivity is not too low and adjust it to a higher level if needed.
+How to Set up PIR Sensitivity via Reolink Software
+test
+If possible, we kindly suggest contacting your carrier to obtain the APN information and importing it into the camera, as this may help resolve the issue.
+How to Import APN information to Reolink 4G Cameras
+test
+Could you please confirm whether there is any visible damage to the reset button or if it is stuck?
+a. Yes, proceed to SOP [Physical damage to camera itself]
+b. No, continue the following task
+test
+Since the reset method varies by model, please reset the camera again by following the correct reset procedure for your specific model:
+Introduction to Reolink Device's Reset Methods
+description
+The camera cannot be successfully reset by pressing the reset button when it is powered on.
+For cameras with a speaker, confirm if there is any sound after a hard reset
+test
+To rule out any distance issues, please reset the Chime and pair it with the camera again at a distance of 2–3 meters.
+How to Reset Reolink Chime
+test
+May I confirm the distance between the Chime and Doorbell?
+
+
+setup
+Please check if the Chime is powered on properly by pressing the side button to see if there is a sound or status light.
+
+
+setup
+Please check the label on Chime and let us know the the version number of it, V1 or V2?
+Note the version number to the comment of this task.
+Chime V1: Work with Doorbell PoE/WiFi V1 ONLY.
+Chime V2: Work with Doorbell PoE/WiFi V2 & V3, and Doorbell Battery.
+setup
+Please use the original charging cable and a compatible charger such as 5V 2A adapter.
+1.When using a non-original charging cable, ensure the charging port is compliant (USB Type C or USB Micro B).
+2.Use a 5V 1A or 5V 2A adapter.
+setup
+Please test the device using another working power supply device.
+Purpose: Confirm whether the issue lies with the current power equipment.
+Try powering the Reolink device using other compliant devices such as: DC (adapter, socket), transformer, PoE (switch, Ethernet cable, Ethernet port, NVR, injector). Ensure that the replacement setup matches the required power rating.
+test
+Please power on the camera off and on once if you are near the device.
+
+
+
+
+
+
+
+
+test
+Please reboot the camera once. You can do this either by tapping the Reboot option in the app (if available), or by powering the camera off and on once if you are near the device.
+
+
+setup
+Could you please perform some test to help check if network-related issues are causing cloud upload failure?
+1.Change the video upload resolution to Fluent How to Change Resolution for Videos Uploaded to Reolink Cloud
+2.Test the camera with a different network. For 4G cameras, try switching to a different SIM card operator.
+setup
+We recommend updating the firmware to the latest version to ensure the camera is in good condition.
+How to Check and Update Reolink Device Firmware
+setup
+Please confirm that the camera can detect motion, as indicated by responses such as siren, push notification, email alert, recording, FTP upload, or auto tracking.
+Purpose: Rule out the possibility that the camera failed to detect motion at the source.
+If the camera shows any of the following responses, it means motion was successfully detected:
+Siren/Push/Email/Recording/FTP/Auto Tracking.
+setup
+Could you please share some information or screenshots to help us confirm the cloud plan is active and the camera is added to it?
+Choose one of the following methods to verify:
+1. Ask for UID and email to check in the CMS system that it is true (Not applicable for CC now)
+2. Ask for a photo of the cloud settings page
+Web: How to Associate a Batch of Reolink Cameras with Your Cloud Plans
+App: How to Bind Reolink Cameras to the Existing Cloud Account
+setup
+Please make sure cloud recording is turned on, and check that the cloud recording schedule (if supported) is configured correctly.
+1. Cloud recording is turned on (Go's cloud recording will be automatically turned off to save power after its cloud plan expires. Users need to turn on cloud recording after renewal)
+2. For camera supports cloud recording schedule, ensure that the cloud recording schedule is set properly. How to Set up Cloud Recording Schedule for Reolink Cameras
+setup
+Could you please check and confirm that the camera supports Reolink Cloud Service?
+Open https://cloud.reolink.com/cloud-plan in an incognito browser mode, select the customer's country, and check whether the model is listed under the Classic or Upgraded Plan. Note: Some newly supported cloud models may require a firmware update from the official website to ensure proper cloud functionality.
+setup
+Could you please make sure the temperature is within the recommended range for your camera?
+Introduction to the Working Environment of Reolink Devices
+setup
+Could you please make sure the temperature is above 0°C? The camera can only charge reliably when it’s above freezing.
+The Charging Temperature of Reolink Battery-Powered Cameras
+test
+Please use a DC adapter to charge the battery to over 50%, then connect the camera to the solar panel to check if it can charge.
+
+
+test
+To avoid the battery appearing not to charge due to faster discharging, please turn off the PIR and shorten the preview time.
+If resolve, explain the working principle to the customer. If unaccepted, RMA (No Replacement)
+test
+If you have multiple Reolink solar panels, please swap them to test which one is working properly.
+1.If there is no solar panel swap test, proceed with RMA to replace the solar panel first.
+2.If, in the same location, using another solar panel results in increased battery power or charging current recorded in the logs, proceed with RMA to replace the solar panel.
+setup
+Please ensure the solar panel and camera are securely connected. You can confirm a proper connection if the charging status light is on or if a sun icon appears in the app.
+
+
+setup
+Please make sure the solar panel is positioned to face the sun directly so it can receive sufficient sunlight.
+
+
+
+
+Could you please confirm whether the camera is accessible from an external network (for example, via mobile data)?
+The device is considered to have internet access if any of the following signs are present:
+1.The customer can view the live stream when their phone/computer is on a different network (e.g. mobile data).
+2.An agent uses the device UID to log in via the latest Reolink App or Client and reaches the password input page.
+If internet access is not working, refer to the SOP [Accessible in LAN and inaccessible in WAN] or [WAN connection failed (non-intermittent)].
+Some models require an Upgraded Cloud Plan subscription. Please double-check whether your model is compatible with the selected plan.
+Some models such as Video Doorbell PoE & WiFi, TrackMix LTE Plus, TrackMix Wired LTE and other devices require an Upgraded Cloud Plan subscription. The complete model list is subject to the official website: Reolink Cloud
+Could you please check which version of the Reolink App you’re using?
+How to Find out the Version of Reolink App
+iOS: Use the latest version by default, no special version is provided. Macro【Tech::Software::App::S05 Can not provide special or older version of iOS App】
+Android: Use the latest version by default. If customers request an older version, the last stable version can be provided.
+If the camera is added to a third-party device, please delete it from that device.
+If deleting fixed the issue , the problem is likely caused by the third-party device modifying the time. It is recommended to check its settings.
+Did this occur right upon using it or after using it for a while?
+
+
+Please use a 5V 2A power adapter with a USB Type-A to Type-C cable to charge the camera for a few minutes, then try powering it on.
+
+
+The battery camera shows no response (no LED and voice prompt) when powering on/off or resetting.
+
+
+As network conditions may vary, could you try a different compatible SIM card from another operator?
+Check the hardware version via UID to determine whether the camera supports Reolink SIM cards: Which Reolink Cameras Work with Reolink SIM Card?
+a.If supported, and the installation location is US/EU/AU/CA/Norway/Switzerland etc., please escalate to after-sales and note: Send the customer a Reolink SIM card for free for testing.
+b.If not supported, or if the region is not listed above, advise the customer to try a SIM card from one of the supported carriers listed on the official website for that country.
+*Please also note in the comment which SIM card(s) the customer has already tried.
+Could you please let us know which SIM card you are using with the camera? For example, is it a Reolink SIM card or one from another carrier? If it’s from another carrier, please let us know which carrier it is.
+*Please note down the name of the SIM card operator currently used by the camera in the comment
+For cameras with antenna, please make sure that the antenna is installed correctly and tightly.
+
+
+If there are other Reolink 4G cameras, please exchange SIM cards for testing.
+
+
+Please reset the device. We advise follow the reset procedure specific to your model. We can provide step-by-step instructions if you need them.
+How to Hard Reset Device by Pressing the Reset Button
+Please restore or reset the device as appropriate. If you can still access the device in the Reolink app, please perform a Restore; otherwise, please Reset the device.
+How to Restore Reolink Cameras/NVRs via Reolink App
+Could you please make sure that the SIM card is installed correctly in the camera? Different SIM card slots have different installation methods. We can provide you with the corresponding installation instructions if needed.
+How to Install SIM Card for Reolink Go PT/Go PT Plus/Go PT Ultra/KEEN Ranger PT/Go Ranger PT
+How to Install a SIM Card for Reolink Duo and TrackMix LTE Series Cameras
+How to Install the SIM Card for Reolink Go/Go Plus/Go Ultra
+The battery level displayed in the app does not match the user’s actual experience
+This includes, but is not limited to:
+1.The camera is continuously in use, but the battery level remains at 100%
+2.Once the battery level drops to a certain value higher than 10% (e.g., 70%), the camera suddenly powers off
+Ensure the Reolink SIM Card plan is not expired and has sufficient data
+
+
+Check whether the network port light is on
+
+
+Apply the Macro【I-IPC::PoE IPC::I28 Why Duo 3 camera's vertical angle looks small?】
+If the customer does not accept it or continues to complain, it is suggested to transfer the case to the RMA team and recommend an alternative model (such as Duo 2 PoE) or for other possible solutions.
+Customers complained about the narrow vertical viewing angle of Duo 3 PoE/WiFi
+
+
+Check the logs to see if there is “dbg:1,0,0"
+If yes, proceed to RMA
+If no, proceed to SOP [Intermittent connection difficulties]
+Make sure the Upload directory is configured properly
+Multiple levels can be separated by "/", but avoid placing "/" at the beginning or end of the path. Also, make sure not to use "\" in the directory path.
+Asking for an additional discount when Reolink official website already shows a discount price
+Confirm the country, then check the disount shows on the product page on Reolink official website:
+1. US: 5% discount code can be offered directly;
+Other countries: 5% discount code can be offered when the discount on the product page is ≤15%.
+Macro:【Pre-sale::Coupon/Price::C02 5% coupon】
+2.If the discount on the product page is between 15%-20%(20% included), 3% discount code can be offered.
+Macro:【Pre-sale::Coupon/Price::C02 3% coupon】
+3.When the discount on the product page is above 20%, no additional discount code can be offered;
+If the total order amount is more than 500,the business-exclusive coupon can be offered via the below link:
+https://reolink.com/for-business/
+Three different coupon options based on the order amount after the email address is entered.
+Macro:【Pre-sale::Coupon/Price::C05 Business-exclusive coupon for bulk order】
+4.If the customer is an old user who wants to buy a new product, the maximum discount can be offered is 25% off MSRP.
+Do not need to get permission from the operator.
+Inform the customer to place the order, then provide the order number to get the difference refund.
+Check the P2P logs of 4G cameras
+Note down the signal strength and whether there are any disconnection records
+Have you checked whether this camera is compatible with your NVR? Please also provide the NVR’s system information for us to review. Make sure the System Information page clearly shows the device UID, hardware version, and firmware version.
+To check camera and NVR compatibility, refer to: Introduction to Hardware Versions of Reolink NVRs
+If compatible, continue with this SOP.
+If not compatible, suggest the following solutions and explain them clearly to the customer. There's no need to proceed with this SOP further:
+a.It's recommended not to add the camera to the NVR and use it independently.
+b.If the customer doesn't accept, transfer to RMA team for other possible solutions.
+Could you please provide the system information of the NVR? Make sure the screenshot includes the UID, Hardware version and Firmware version.
+How to Find out Reolink Device System Information
+Adjust the hard drive installation position to avoid resonance
+Applicable to NVR, not Home Hub Pro
+Advise customer to place the NVR or Home Hub Pro away from office or living areas, such as in a electrical cabinet, or soundproof enclosure (ensure proper ventilation and heat dissipation)
+
+
+Ensure that the NVR or Home Hub Pro casing is secure and not loose
+
+
+The HDD of the NVR/Home Hub Pro is noisy
+Request for video for verification
+升级测试固件
+1.固件推送管理系统查找有无针对该问题的测试固件
+2.如无测试固件则升级到官网最新固件
+Could you please uninstall the latest version and install last version and see if it helps?
+a.If resolved, it is recommended to use last version
+b.If unresolved, escalate to RMA (No Replacement)
+Tap spotlight on the live view page and check if spotlight will turn on
+How to Configure Spotlight Settings via Reolink App
+1.Off: do not need to confirm the following S-items: whether it is in night mode, whether it triggers an alarm to detect motion, whether the relevant spotlight settings are reasonable, and whether the camera installation position has no strong light.
+2.On: still need to confirm the following Task items
+Remove the device in questions from Reolink NVR or Home Hub then add it back
+Refer to: How to Delete Reolink Device from App/Client
+Note: Before deleting it, please make sure to save the UID and confirm that you have the correct login credentials.
+Remove the device in questions from Reolink App then add it back
+Refer to: How to Delete Reolink Device from App/Client
+Note: Before deleting it, please make sure to save the UID and confirm that you have the correct login credentials.
+Cloud test failed, showing error code like -38 or other error codes
+
+
+Select the troubleshooting steps based on whether Chime is V1 or V2
+If it is a V1, please skip step 9
+If it's a V2, please skip step 11
+Is Doorbell added to Home Hub/Home Hub Pro?
+If no, proceed with current SOP.
+If yes, proceed to SOP [Home Hub::Firmware and others::Doorbell camera unable to pair with Reolink Chime settings after adding to Home Hub].
+The customer claims that he/she is a reseller, installer, dealer, distributor , want to have business cooperation or the purchased quantity≥20或amount≥2000
+Check if the country is sanctioned.
+1.Cuba/Iran/North Korea/Syria/Belarus/Libya/Venezuela/Myanmar/Pakistan belong to sanctioned countries, no need to follow-up, please close the ticket directly:
+Macro:【Pre-sale::Business/Sale::B2B::B02 Consulting for countries under complete/severe sanctions】
+2. If the county does not belong to sanctioned countries,check if can be shipped from Reolink official website via this link:
+https://reolink.com/shipping-and-delivery/
+a.If can be shipped, guide to register a B2B account:
+Macro:【B2B-Business Partner Registration】
+b.If can't be shipped, escalate to Pre-sale L2.
+Is the camera powered on or not?
+If no, proceed to SOP [Camera not powered]
+Reolink Camera Not Powering on
+The camera cannot be successfully added to the NVR
+Reolink PoE Cameras not Connecting to NVR
+Attention: Adding or removing cameras on the NVR can only be done through the Monitor. It is not supported via the Reolink App, Client, or Web Interface.
+1. The camera cannot be seen in the monitor IP channel list.
+2. The camera is detected on the monitor IP channel list, but cannot be added, and offline/connection failed/video loss/low firmware version is displayed.
+3. The camera is detected on the monitor’s IP channel list, but shows "incorrect password" (just look at the Task items for the password, upgrade, and reset steps)
+Request for the SIM card number
+How to Find Reolink SIM Card Number and ICCID
+Failed to pay for Reolink Cloud Service/Reolink SIM Service
+2 D-Failed to pay for Reolink Cloud Service/Reolink SIM Service
+1.No credit card option, only Paypal is available.
+Macro【Pre-sale::Payment::P21 How to pay with credit card】
+2. If the Reolink Cloud Service is purchased via Reolink App, suggested to try via the official website.
+3. If the problem is not resolved, then escalate to Pre-sale L2 after confirming the error message or screenshot and the country.
+After entering "Cloud" on the App, it prompts "Failed to load. Click to try again" or "Failed to obtain configuration information.“
+
+
+Inquiry about after-sales policies, such as warranty period, warranty, return shipping fee, return warehouse location, etc.
+1.The official platforms: Geneal products offer 2-year warranty, refurbished products offer 1-year warranty, Professional Series products offer 3-year warranty.
+Macro:【 Pre-sale::Service::S04 Warranty policy for general products】【Pre-sale::Service::S04 Warranty policy for refurbished products】【Pre-sale::Service::S04 Warranty policy for Professional Series products】
+2. Only general product can register to get extra 6-monty warranty.
+Macro:【 Pre-sale::Service::S04 Warranty policy for general products】
+3. All online purchase offer 30-day return and exchange Macro:【 Pre-sale::Service::S02 Warranty policy for returning products】
+Poor connection of cameras working with Home Hub
+The camera works fine when standalone, but after being added to the Hub:
+1.Frequently disconnects from the Hub and becomes inaccessible
+2.An event occurred, but the corresponding video is missing from the playback.
+3.The video in the playback is unplayable.
+4.The sub-stream playback is functional, but the main stream is not.
+If there is fog inside or outside the shell cover, wipe it clean, tighten the shell and observe
+Applies to vandal-proof models with shells, such as 843A/840A/540A/1240A, etc.
+Could you please provide the UID of the Home Hub/Home Hub Pro?
+How to Find the UID for Your Reolink Device
+Could you please provide the UID of the NVR?
+How to Find the UID for Your Reolink Device
+Could you please provide the UID of the camera(in question)?
+How to Find the UID for Your Reolink Device
+在日志系统查询耗电情况并备注
+
+
+Check whether the camera supports Reolink SIM card
+Which Reolink Cameras Work with Reolink SIM Card?
+1.If yes: Locate the firmware in the firmware system and guide the customer to upgrade it via an SD card or by pushing the upgrade remotely (push requires the camera to connect to the internet using another SIM card first). After the upgrade, the device can be used normally.
+2.If no: Explain to the customer that this model does not support the use of a Reolink SIM card and advise use another carrier. If the customer does not accept this or becomes upset, escalate to the RMA team.
+Please add device via UID instead of IP address or domain name
+
+
+开保活或转发 [Time-consuming]
+*仅适用于电池WiFi机和美国以外地区的电源机
+*不要透露我们的操作，只需说我们刷新了UID
+Check whether the issue is a known issue
+For Client, refer to Reolink Client Known Issues and Solutions
+For App, refer to Reolink App Known Issues and Solutions
+1.If it is a known issue and the customer accepts the temporary solution, close the ticket directly.
+2.If it is not a known issue or the customer does not accept the temporary solution, complete this SOP and escalate it to the L2 team.
+Any of the following situations indicates motor failure and qualifies the device for direct replacement. Otherwise, transfer to RMA team for business solutions.
+1.Manually pan the camera fully to the left and fully to the right, then perform several random PT operations and return to the monitor point/preset, the issue reappears quickly.
+2.After performing calibration, immediately set a monitor point/preset and recall it, the camera deviates right away.
+Any of the following situations is partial configuration not loading/missing/displaying incorrectly
+1.Some configurations fail to load, such as showing “Failed to load” or the entire section appearing blank.
+2.Some configurations are missing, for example, the camera supports the Push function but the Push button does not appear on the Settings page.
+3.Some configurations display unexpectedly, such as battery-related options appearing on a PoE model.
+Cloud test is successful, but the camera still does not upload cloud recordings.
+
+
+Which recording type do you expect, continuous recording (24/7) or motion-based recording (recording only when there is movement)?
+1.Continuous Recording, proceed to SOP [Continuous recording failed]
+2.Motion-based recording, proceed to SOP [Motion-based recording failed]
+For the Home Hub Pro, make sure to connect its WAN port to the router, not its LAN port
+
+
+One of the following conditions is met, that is, the NVR is physically damaged
+1.Physical damage such as a cracked casing, loose or deformed ports, corrosion, smoke, or unusual smells. Request photos and videos for verification.
+2.PoE NVR’s camera port cannot power the camera, cannot recognize the camera, the port indicator lights are off, or all LAN/camera port lights stay solid without any cable connected, or all lights flash at the same time.
+Confirm if the camera supports continuous recording
+Which Reolink Cameras Support Continuous Recording
+Confirm whether the camera is able to detect motion
+If any feature such as Siren, Push, Email, or Auto Tracking is working normally, it indicates that the camera can detect motion
+Advise the customer use a Reolink SD card to see if the issue is resolved
+
+
+The SD card overwrite feature is enabled, but when the SD card is full, new recordings cannot be generated.
+
+
+If a Time Lapse video is being generated at the same time, make sure the overwrite feature for Time Lapse is enabled as well.
+Models that support time lapse: Which Cameras Support Time-Lapse
+How to Set up Time Lapse via Reolink App
+The SD card is detected normally and formats successfully, but the camera cannot perform continuous recording to the SD card.
+
+
+The SD card is detected normally and formats successfully, but the camera cannot perform motion-detection recording to the SD card.
+
+
+The SD Card Recording function is enabled, and the correct recording schedule has been set.
+2.For continuous recording, set Timer or Continuous Recording Schedule.
+3.For motion recording, set Alarm Recording Schedule or PIR Schedule (PIR Schedule is available only on older battery-powered models that do not support Smart Detection).
+Is the SD card capacity sufficient?
+If the SD card is full, format the SD card or enable Overwrite to see if recording continues. Note that some models do not have a Overwrite switch and Overwrite is enabled by default. microSD Card/HDD Overwrite Functionality Support
+If overwrite is enabled normally, but recording stops every time the SD card is full, please proceed to SOP [Camera stops recording when SD card is full].
+The following conditions indicate that the SD card is not recording
+1.Playback page shows “No recordings.”
+2.Some days have recordings on the playback page, while other days do not.
+3.It was recording normally before, but recently no new recordings have been generated.
+4.The camera is not recording motion detection events to the SD card.
+5.The camera is not performing 24/7 continuous recording.
+Is SD card detected or recognized properly?
+If not, proceed to SOP [SD card not recognized]
+Was the SD card successfully formatted?
+If not, proceed to SOP [SD card cannot be formatted]
+Request for the System Information page
+1.If the issue involves multiple Reolink devices (such as NVRs, Home Hubs, or cameras), please request the System Information for all involved devices.
+2.The System Information page must clearly display the device UID, hardware version, and firmware version.
+PIR schedule/alert schedule (push, email and so on) are set correctly
+For battery-powered camera with smart detection feature, there is no PIR schedule setting
+It takes 5 seconds or longer before the Chime rings
+Confirm how frequently the issue occurs and whether there is any specific pattern
+The Chime only rings when the doorbell is placed very close to it
+Check the firmware system for any applicable frequency-offset calibration firmware. If available, provide the upgrade to the customer
+The Chime does not ring when the doorbell button is pressed
+Confirm whether the device is connected to any third-party software. Ask the user to remove it from the third-party software and check whether the issue is resolved.
+If any of the following issues occur, it indicates that the chime is not working properly
+The chime and doorbell are successfully paired, but:
+1.The chime does not ring when the doorbell button is pressed.
+2.The chime only rings when chime is very close to the doorbell.
+3.The chime rings only after a delay of 5 seconds or longer.
+For Doorbell (Battery)
+Add the Reolink Chime as a device to the Home Hub, then use the Smart Linking feature to link the Video Doorbell(Battery) with the Reolink Chime.
+Refer to this article How to Connect Reolink Video Doorbell (Battery) to a Chime section “2. Reolink Chime — Connected to Reolink Home Hub via Reolink App”.
+For plug-in Doorbell models
+1.V1 Doorbell + V1 Chime
+No additional settings are required. The pairing method is the same as when used standalone. Please refer to the How to Pair Reolink Doorbell with Chime (Doorbell PoE/WiFi), section “How to Pair Reolink Doorbell with Chime V1.”
+2.V2 or V3 Doorbell + V2 Chime
+Method 1: Pair through Settings → Chime → Reolink Chime on the doorbell. Refer to the How to Pair Reolink Doorbell with Chime (Doorbell PoE/WiFi), section “How to Pair Reolink Doorbell with Chime V2.”
+Method 2: Pair via Smart Linking. Refer to the Introduction to Smart Linking on Reolink Home Hub Series.
+Update the Home Hub to the latest firmware
+How to Check and Update Reolink Device Firmware
+The Doorbell camera works fine with the Reolink Chime in standalone mode, but after adding it to the Home Hub, it can not pair with the Reolink Chime.
+
+
+索要S/N码以查询UID
+点击查看S/N码示例
+登记S/N码到转发等后台操作表格可申请查询UID
+Chime and Doorbell cannot pair up successfully
+
+
+Is the SIM card included with the purchase of the camera?
+
+
+PoE Switch/Injector or DC Adapters as Power Supply Device
+Please make sure you are using a compliant PoE switch/injector or DC adapter. Specs can be found in product link e1-outdoor-poe/#specifications eg. IEEE 802.3af, 48V Active.
+Reolink PoE NVR as a Power Supply Device
+If the camera is connected to a Reolink PoE NVR, please try another PoE port on the NVR and use a different known-working Ethernet cable. Also, please make sure that the total power required by the cameras connected to the NVR does not exceed the NVR’s maximum PoE power output. You can unplug 1-2 camera to test.
+Could you please confirm which power supply method you are using? For example: PoE switch, Reolink PoE NVR, DC adapter.
+
+
+Set the full screen to the non-detection area, trigger the camera, check whether there is a motion icon on live view. Confirm whether the non-detection area does not take effect.
+a.If there is a motion icon, the non-detection area does not take effect and escalate to L2
+b.If not, continue with the following Tasks
+Make sure logged in with an administrator account
+For details about the permissions of non-administrator accounts, please refer to: Introduction to Admin Account and User Account
+Remove the SIM card from the camera, insert it into the phone, and unlock the PIN.
+Applies to customers who still remember the PIN code. Refer to: How to Unlock Sim Card
+Contact the SIM card provider to assist with unlocking the SIM card PIN.
+
+
+After inserting the SIM card into the camera, the camera announces, "The SIM card is locked with a PIN."
+
+
+When using the app for two-way audio, the person using the app can barely hear the voice transmitted from the camera.
+Request video for verification
+Change another software to upgrade [Time-consuming]
+1.For standalone devices that support web access, please try upgrading via the web interface to see if the issue can be resolved.
+2.For devices used with an NVR, you can upgrade via USB on the NVR itself or delete the camera from the NVR and upgrade it separately.
+Can't connect in both LAN and WAN
+Introduction to LAN and WAN
+One of the following conditions is met, that is, the Home Hub is physically damaged
+Physical damage such as a cracked casing, loose or deformed ports, corrosion, smoke, or unusual smells. Request photos and videos for verification.
+Use the [B21 Charitable Donation] macro to guide the customer to send details to the PR email address, and then close the ticket manually.
+
+
+Customer remains uncooperative even after calming attempts
+If the customer requests an RMA → Escalate the ticket to RMA.
+If the customer insists on resolving the issue → use macro 【Tech::General::Calming Script::Customer::G90 (Non-cooperation and resolution request) 】for further communication.
+a. If effective: Continue troubleshooting or escalate to RMA based on customer's intention.
+b. If ineffective: Use macro 【Tech::General::Transfer & Management::G125 (Escalate to Complaint Group)】 to escalate to the complaint team.
+Customer refuses to cooperate; use one of the following macros depending on the specific situation:
+Tech::General::Calming Script::Customer::G92 Non-cooperation in providing troubleshooting information/steps
+Tech::General::Calming Script::Customer::G91 Non-cooperation and frustration
+Tech::General::Calming Script::Customer::G87 Poor handling and emotional
+Tech::General::Calming Script::Customer::G88 Just express frustration simply
+Tech::General::Calming Script::Product::G69 Doubts about product quality
+Tech::General::Calming Script::RMA Request::G66 Request return directly without reason and troubleshooting
+Tech::General::Calming Script::RMA Request::G67 Request replace directly without reason and troubleshooting
+
+
+Customer refuses to cooperate with troubleshooting, resulting in the ticket not being able to move forward
+
+
+No sound or very low/inaudible sound during preview and playback
+Request a video showing the issue
+Ensure that the Reolink account logged in on the Reolink App is the same as the Reolink account logged in on Smart Home App
+
+
+Export diagnostic information when the issue occurs(NVR)
+Only applicable for NVRs with new UI Introduction to Hardware Versions of Reolink NVRs
+There is an attempt to focus
+Use the macro [Tech::Device::IPC::Shared::D65 Collect video of the focusing process under Clear stream mode] to request the video and determine which of the following situations it belongs to. If it is [3], it means there is an attempted focusing process:
+1. Regardless of whether it is Zoom or Focus, the camera image does not zoom in or out, and the clarity does not change in any way.
+2. During Zoom, the screen zooms in and out normally. When Focusing, the sharpness of objects in the picture does not change and is always at the same value.
+3. During Zoom, the screen zooms in and out normally. When Focusing, the clarity of objects in the picture changes, sometimes becoming clearer and sometimes blurring.
+Note: Only providing pictures is invalid. If the video provided by the customer is not compliant or the customer refuses to provide information, making it impossible to judge, send the above three situations to the customer for verbal confirmation.
+The camera has a UID and is not directly connected to the NVR. The current firmware version supports smart home functions.
+If the camera is directly connected to the NVR, and the NVR supports HyBridge mode, it is recommended to advise the customer to enable it. This way, the camera needed to be added as a standalone device and use smart home features. Introduction to Reolink NVR HyBridge Mode
+Inquiry how long it will take to ship out, how long it will take to arrive, where it will be shipped from, whether it can be shipped to a certain country/region, etc.
+1. Check the countries and regions Reolink official website can ship to via the link below.
+Link:https://reolink.com/shipping-and-delivery/
+Macro:【Where ship to】
+2. If the country or region is not listed on the Reolink official website, ask if the customer would like to purchase from Amazon.
+If yes, suggest purchasing from Amazon.
+If the customer wants to know if Amazon can ship to, transfer the case to the Amazon team to check.
+Consult about purchasing accessories
+Confirm whether the accessory itself can be replaced via the links below:
+https://reokb.zendesk.com/hc/en-us/articles/36301160555929-Reolink-Amazon-Purchase-Sites-Official-Website-and-Accessory-Purchase
+1. If can't be replaced: the accessory itself is broken/damaged, troubleshoot, then transfer to the RMA team.
+2. If it can be replaced: check if it can be purchased from the official website and Amazon one by one via the links below:
+https://store.reolink.com/accessories
+https://reokb.zendesk.com/hc/en-us/articles/23829049589273-Accessory-Recommendations-Other-Brands
+If the above are all not available, search for the dimensions on the sheet of Product-Product Parts Dimensions
+Suggest customer to purchase by him/herself via the provided dimensions.
+Want to have market cooperation, such as product promotion, trial, evaluation
+Check which self-media platform the customer belongs to:
+1.YouTube/FB/Tiktok/INS/Others:
+Macro:【Pre-sale::Business/Sale::Media/Market::B15 YouTube(YTB) channel (Influencer)】
+2.Editor/Writer:
+Macro:【Pre-sale::Business/Sale::Media/Market::B17 Refuse to cooperate (Influencer)】
+3.Products Trial:
+Macro:【Pre-sale::Business/Sale::Media/Market::B18 Free new product trail - Join FaceBook group (Person) 】
+For Mac Client, ask customer provide Mac OS Version
+1.If the Mac OS version is 10 or lower, inform the customer that it is not compatible and they need to upgrade their to the latest version.
+2.If the Mac OS version is 11 or higher, escalate to L2.
+For Windows Client, Install Visual Studio 2022
+Reolink JavaScript Error When Installing Reolink Client
+When installing client version 8.10 or above, the Windows client shows the error message “JavaScript Error: Win 32 error 126”, and the Mac client shows “Error: Dynamic Linking Error: dlopen”.
+
+
+Home Hub Pro must be upgraded to v3.3.0.369_25090459 or later firmware for the SD card to work properly
+
+
+If the reported camera is Argus Eco(B165)
+Push the latest firmware version v3.0.0.3671_24112114
+Request for a picture of the Network Information page
+1.Check if the device has obtain valid IP address, gateway and DNS.
+2. For cameras that support static IP, switch to Static IP if it is set to DHCP and vice versa
+Customers inquire about the payment methods supported by the official website and whether a certain payment method is supported
+1. The most common payment method on the official website is Paypal account/Credit card(all countries supported),
+Google Pay/Apple Pay(CA/AU excluded )
+2. Payment by phone and cash on delivery are both not supported,
+The recommended payment methods:
+Macro:【Pre-sale::Payment::P03 Cash on delivery not supported】
+3. Payment by installments:Paypal credit.Only available in countries:US, UK, DE
+Pay later is available in countries:US FR IT ES UK AU
+4.Company purchase(request a quotation/proforma invoice,involves PO purchase/transfer ):
+a.Check if there is a pending/cancelled order on the Order Management System via the provided email address,
+if not, guide the customer to place a pending order firstly ;
+b.Meanwhile, confirm if the bank transfer is required:
+If yes:
+Macro:【Pre-sale::Payment::P04 Bank transfer supported in other sale areas】【Pre-sale::Payment::P05 Bank transfer supported in Italy】(Note: this is only applied when Italian customers inquire about 50% tax refund and want to use bank transfer )
+If no:
+Macro:【Pre-sale::Payment::P06 Payment methods-cooperate purchase/quotation】
+c.After confirming, please note the order number and the customer's specific requirements and escalate to Pre-sale L2.
+5. Cloud Service:
+We support PayPal Accounts and 4 kinds of credit cards for payment: Visa, MasterCard, American Express (Amex), and Discover. You can choose the payment method during checkout.
+For US, CA, and MX:
+If you want to use a Credit Card for Cloud Payment, you could click "Pay via PayPal", and then you will see the "PayPal with Credit card" option.
+For other countries other than US, CA, and MX:
+PayPal and Credit card payment options are listed side by side. Please note that if [Auto-renewal] is checked, the payment option is still only PayPal.
+If it is placed steadily on a desk and you notice slight noise, this is the normal operating sound of a model with a built-in fan. If customers are still unsatisfied with the fan noise, please transfer to the after-sales team and note it's advised to provide business solution. For NVR, you can also advise switch to the fanless 8-channel NVR model.
+
+
+Please kindly check if the NVR/Home Hub is placed on a stable surface to avoid any possible vibration or resonance
+
+
+The fan of the NVR/Home Hub is noisy
+Request for video for verification
+Storage page or playback page shows “HDD not formatted” and still receive the same error message after formatting the HDD.
+
+
+For cameras that support smart detection, explain how Any Motion works, and persuade the customer to uncheck Any Motion.
+
+
+Camera is wired connected, while adding camera to the app/client, camera shows "connection failed" error message
+Just meet one of the following situations:
+1. When configuring and adding a camera for the first time, it prompts "connection failed".
+2. After using it for a period of time, the camera’s wired connection cannot be connected at all, prompting "connection failed".
+3.The camera can't be scanned in LAN
+Camera's own physical damage
+1.Such as lens cracking, tail cables (network port/dc cord/reset cord) is damaged, external casing damage, insects entering the lens interior, internal antenna detachment, emitting a burnt smell and producing smoke, camera body surface shows oil leakage, etc.
+2.Request for video pictures/videos for verification.
+Cloud AI Video Search
+Our Cloud AI Video Search feature will be launched soon.
+1.Please carefully read the following two articles to understand the basic usage of this feature, so can handle customer inquires effectively: About Reolink Cloud AI Video Search+ & Introduction to Reolink Cloud AI
+2.Please keep an eye out for any large-scale issues related to cloud features, meaning cases where many customers report the same abnormal issue. If such issues occur, it is recommended to select the corresponding ticket topic and escalate to the L2 team.
+3.We have also added a dedicated ticket topic [Cloud AI Video Search] specifically for tracking the Cloud AI Video Search feature (there are currently no troubleshooting steps, as we cannot yet anticipate common issues; these will be added later if needed). You can directly select this topic and escalate to the L2 team.
+Customers ask for product or company certificates
+Send this article to customers first, escalate the ticket if customers have further questions: https://support-d.reolink.com/hc/en-us/articles/48244867426329-Is-Reolink-Device-NDAA-Compliant
+1. Product Certification/Company Certification/Transportation Report, escalate to Pre-sale L2.
+2. NDAA-Transfer to Security Team
+Guidelines for Processing Facebook/Twitter DM
+1.Respond in conversational style – Do not use formal email format.
+2.Reply only in the user's language – Do not include bilingual responses.
+3.Do not use hyperlinks – Always paste the full URL directly in the message.
+4.Do not send images or attachments – If a file needs to be shared, upload it via tools like WeTransfer and paste the download link.
+5.Images or videos sent by users cannot be viewed directly – Contact 新媒体-王丽馨(Alyson) to check in the backend, or ask the user to follow up via email.
+No attempt to focus process
+Use the macro [Tech::Device::IPC::Shared::D65 Collect video of the focusing process under Clear stream mode] to request the video and determine which of the following situations it belongs to. If it is [1] or [2], it means there is NO attempted focusing process:
+1. Regardless of whether it is Zoom or Focus, the camera image does not zoom in or out, and the clarity does not change in any way.
+2. During Zoom, the screen zooms in and out normally. When Focusing, the sharpness of objects in the picture does not change and is always at the same value.
+3. During Zoom, the screen zooms in and out normally. When Focusing, the clarity of objects in the picture changes, sometimes becoming clearer and sometimes blurring.
+Note: Only providing pictures is invalid. If the video provided by the customer is not compliant or the customer refuses to provide information, making it impossible to judge, send the above three situations to the customer for verbal confirmation.
+Suggestions for high battery consumption when pre-recording or continuous recording is enabled
+1.Reduce false alarms: Properly set non-detection zones, lower smart detection sensitivity, and adjust Object Size settings.
+2.Enable Smart Battery Mode: Set a battery level threshold (e.g., 30%–90%) to automatically stop pre-recording or continuous recording when the battery drops below a certain level.
+3.Lower frame rate: It is recommended to reduce the frame rate for pre-recording and continuos recording, such as setting it to 2 fps.
+For MNL team, there is no need to continue with the following tasks, proceed directly to L2. For other teams, continue with the troubleshooting.
+
+
+Adjust threshold
+1. The problem occurs in color mode, adjust the threshold +26
+2. The problem occurs in black and white mode, adjust the threshold to -26
+Note: There is no scale in the App. It is recommended to adjust it on the Client.
+Disable PIR function
+Purpose: Rule out IR light behavior caused by PIR triggering.
+When PIR is enabled and triggered during night time, the IR lights will turn on and then turn off when the device returns to standby. This is expected behavior designed to avoid confusion between “IR light flashing due to alarm events” and “abnormal IR light behavior.” We recommend disabling the PIR function temporarily to see if the issue still persists.
+Ensure the Reset button is not physically damaged
+1.Press the button to confirm it is not stuck, can be pressed down smoothly, and has a responsive rebound.
+2.Check that the button is not affected by water ingress, corrosion, or any other visible physical damage.
+Check if the high power consumption is caused by integration with other devices
+If the camera has been added to a Reolink NVR or Home Hub, or connected to third-party software via the NVR/Home Hub, please disconnect these connections first and observe whether the power consumption improves. If the power consumption returns to normal after disconnection, it can be preliminarily determined that the issue is not caused by a hardware fault. In this case, please refer to other relevant SOPs, such as [Home Hub::Firmware and others::Camera drains battery quickly after being added to the Hub].
+Important Note For SOP [Partially lost configuration]
+For the issue of [Partially lost configuration], please make sure to emphasize at least twice to convince the customer to perform a Restore. Explain to the customer that Restore only resets basic settings — it will not reset WiFi settings or delete any recordings.
+Gather information on the current SIM card being used by the camera, including the carrier (operator) and the data plan.
+
+
+Intermittent connection failures, disconnections, or preview lag on 4G cameras
+
+
+After the camera is powered on, it makes a "ding ding" sound or says "Please run Reolink App, add the camera and set it up," indicating that it is ready to be set up.. However, during the step where the camera scans the QR code from the Reolink App, no beep sound is heard to confirm a successful scan.
+
+
+Make sure the camera/NVR firmware is the latest version from the official download center
+Reolink Download Center
+Push notifications are not received for certain periods or arrive intermittently
+
+
+Camera IR light keeps on and off
+Request for pictures/videos for verification
+Known compatibility issues mentioned in the knowledge base
+1. The resolution display D1 cannot be modified.
+2. No Two-way audio/Siren/Smart detection/tracking function
+3.Live stream from multiple cameras flicker intermittently on monitor interface
+Verify if the UID is bound to another account
+Go to this link to verify: https://admin.reolink.com/child-app-federal-cloud-admincp/#/device/query-association
+If it is bound, please select topic [Information security-Exercise User's rights] and use Macro [G22 Transfer to Information Security Group] to transfer to Information Security Group.
+The WiFi/router settings meet the compatibility requirements of the camera model.
+Different camera models have different WiFi requirements. Certain router settings may affect whether the camera can connect successfully. For more details, please refer to this article: Introduction to the Requirements of WiFi Networks for Reolink WiFi Cameras and Battery-powered WiFi Cameras
+Search results may be inaccurate, missing, or mismatched with the query.
+
+
+Video clips from AI search results fail to play properly or encounter playback errors.
+
+
+AI Video Search is slow to respond or fails to load search results.
+
+
+Reolink cameras can be added to third-party platforms successfully, but some features (e.g., PTZ, smart/motion detection, two-way audio) do not function properly.
+
+
+The two lenses are facing the same scene, but there is a noticeable difference in image brightness.
+Request for picture for verification
+Please note that this issue is different from issue [Day and night mode does not auto switch] on dual-lens models. Refer to Camera Image Problems
+The camera(with IR lights) remains in either color or black-and-white and cannot switch properly
+收集图片确认 Camera Image Problems
+Overwrite is turned on
+How to Enable/Disable Overwrite
+NVRs with Hw No. H3MB18/N2MB02/N3MB01/N5MB01/N6MB01/N7MB01 have the overwrite interval option. You can configure the NVR to overwrite the old recordings at a certain interval.
+One of the following conditions met is the HDD does not record
+1. HDD does not record at all (App/Client/Monitor playback has no recordings.)
+2. HDD often stops recording (all cameras stop recording at the same time period), and you need to reboot/reset NVR or format HDD to record again
+3. HDD is not automatically overwritten
+If the HDD cannot be recognized, select 【HDD Not Recognized】 SOP
+Delete all the "Privacy Mask" settings if there is any
+How to Set up Privacy Mask for Reolink Cameras
+Format the SD card to FAT32 using a PC
+How to Format a microSD card on PC
+Format the HDD after rebooting NVR/Home Hub Pro
+
+
+Cameras that support Black&White and Color switching threshold
+1. If the camera does not auto switch to night mode, adjust it to -26. If that doesn’t work, adjust it to -45.
+2. If the camera does not auto switch to day mode, adjust it to +26. If that doesn’t work, adjust it to +45.
+Introduction to Black&White and Color Switching Threshold
+If upgrading firmware through the Client, place the firmware on the desktop to shorten the upgrade path.
+
+
+OSD can be seen on the preview image
+How to Set up the Display Settings (OSD) for Reolink Cameras
+The customer wants to cancel the order, or modify the information of the order, such as logistics address, product model, product quantity, etc.
+
+
+Order paid, request invoice
+
+
+The same product shows different product prices in different countries
+Duo to different countries have different product costs/logistic costs and promotional strategies, the price differences in different countries are not applied to the price guarantee on our official website.
+The price guarantee is only applied for the price difference in the same country.
+Generally, we can refund the difference within one week, for big promotions, eg. Black Friday, we can refund the difference within 30 days.
+Inquire about the inventory of a certain product and when the product will be available
+Check the sales platform page for the customer's country to see if the product is available online.
+1. If available, inform that the product is in stock and guide to place the order
+2. If not available, check the inventory sheet:https://doc.weixin.qq.com/sheet/e2_ABMAYQZHABUE9QuEYMsR6apXlrtM8?scode=ALUAKwcOAAss43NS8JAM8AWAY7AE4&type=1&sid=1s12NYyRemIusjZrACxteQAA&force_open_in_wx=1&tab=cy4dth
+a.If the product is on the way, inform the approximate available time(estimated time of arrival+7days)
+b.If the product is not in transit, inform that there is no stock and the ETA is unknown yet, recommend other products or guide customers to subscribe the arrival notifications (accessories cannot be subscribed to)
+c.If the product is discontinued, inform that there is no stock and the ETA is unknown, and recommend other products
+3.New products without the product pages on official website:
+a.Without the product page, but can be found via this link:https://reolink.com/roadmap/,guide to select country in the upper right corner + subscribe to specific products
+b.Without the product page and can't be found on the above link, guide customers to select a country on the official website and scroll to the bottom to subscribe
+Inquiry price
+Check the current price on the sales platform and inform the customer.
+The order has been paid on the official website, but the order status is Reviewing
+Confirm if the order status is ""Reviewing"" on the Order Management System via the provided email address or order number
+If yes, escalate to Pre-sales L2.
+Inquiries about accessory specifications and compatibility.
+Check:help center,ReoKB,or the sheet of Product-Product Parts Dimensions to provide the information accordingly.
+If can't be found, then escalate to Pre-sale L2
+Looking for installers and asking if installation service is provided.
+Informed that no installation service is provided and no installer is recommended
+Macro:【Pre-sale::Service::S01 Installation service not provided】
+Want to purchase at local and look for local resellers
+1. Suggest purchase from our official website at first.
+Highlight the advantages of purchasing from the official website, such as a two-year warranty.
+2. If the customer insists on purchasing from a local reseller, then escalate to Pre-sales L2.
+Customers reported that other platforms, such as Amazon, expensive than the official website.
+Select "order from",transfer to RMA team.
+Customers reported that the product price is lower on other platforms compared with the official website and requested to refund the difference.
+Confirm the platform and ask for screenshots or links:
+Macro:【Pre-sale::Coupon/Price::C13 Lower prices on other platforms than the official website】
+1. If the discount on other platforms ≤MSRP 30% off, the official website matches the price directly;
+If the SD card and other accessories are included at the same time,the official website can also provide these for free(Refund after the order is placed, Macro:【Pre-sale::Coupon/Price::C09 Price Match】), do not need to get permission from the operators.
+2.If the discount on other platforms ＞MSRP的30% off,escalate to Pre-sale L2.
+The customer is interested in buying the product; ask for recommendations.
+1. The customer does not have a specific requirement and asks for a recommended model: collect specific information firstly and then do the recommendation.
+Macro:【Pre-sale::Business/Sale::Recommendation::All::B23 Product recommendation】【Pre-sale::Business/Sale::Recommendation::All::B24 NVR kit recommendation】
+2. The customer mentioned 1-2 requirements and asked for the recommended model accordingly:
+Based on the installation scenario (power supply network) + functional requirements, recommend 1-2 models have inventory in the county.
+Macro:【Recommendation】
+3. The customer already has several interested products/models and asks about the differences:
+Introduce the main differences between the products and the features that the customer cares about.
+Macro:【Recommendation::Difference】
+Or refer to the comparison link from the official website:
+https://reolink.com/comparison/
+4. The customer has a product that he/she is planning to purchase and asks about the functional parameters in detail: Select the ticket topic as ""Product inquiry"" category, but focus on guiding customers to place the order.
+Failed to pay for products purchased on the official website and unable to place an order (some customers indicate they don't want to pay via Paypal, but no credit card option that prevents them from finishing the payment.
+Check the order status on the Order Management System via the provided email address:
+1.Processing/Completed: inform that the order was placed successfully, and we will be shipped out soon.
+2.Pending/Cancel:Macro:【Pre-sale::Payment::P01 Initial response-try a different browser】
+Escalate to Pre-sale L2 after confirming the details
+Customers from US/CA inquired about tax exemption. How to get tax exemption for the reseller, the church/school, an experimental institution, or a non-profit organization.
+Confirm the country and request a tax exemption certificate.
+Then escalate to Pre-sale L2
+Macro:【Pre-sale::Tax::T01 Request tax exemption certificates from US customers】、【Pre-sale::Tax::T02 Request tax exemption certificates from CA customers】
+Order is already paid, but not placed successfully
+Ask for the used email address or order number, then check the status of the order on the Order Management System via link:https://reolink.com/wp-admin/admin.php?page=reolink-orders or
+1. Status is ""processing/completed"", inform that the order has been successfully placed and will be shipped out as soon as possible.
+2. Staus is ""pending/cancel"", ask for proof of payment, then escalate to Pre-sale L2.
+Macro:【Pre-sale::Payment::P02 Customer said they placed an order, but we couldn't find it】
+European customers inquire about tax exemption, request VAT tax-free invoices, and want prices excluding VAT
+Reply based on the country:
+1.DE&UK are not available for VAT exemption,Reolink will pay the VAT,and will issue an invoice that includes the VAT and our VAT number.
+Macro:【Pre-sale::Tax::T03 VAT exemption is unavailable for UK/DE country】
+2.CH/NO:inform customers that the price is not tax included.
+Macro:【Pre-sale::Shipping::S01 Where ship to Switzerland(CH)/Norway(NO)】
+3.Other european countries listed on the Reolink official website:
+If the customer has a VAT number, they can enter the VAT number when placing an order on the website to automatically deduct the VAT. Please remind the customers not to modify the address that is automatically filled in after verification.
+Macro:【Pre-sale::Tax::T04 Enter VAT number to auto-deduct VAT without address change】
+If the customer does not have a VAT number,VAT exemption is not available.
+Declare their unique identities and ask for corresponding discounts, such as student discounts, teacher discounts, and military discounts
+Customers from US/CA//UK can find the entry of the application at the bottom of the home page of Reolink official website.
+1. Student Discount:
+Macro:【Pre-sale::Coupon/Price::C06 Student discount-available only in CA/UK/US】
+Teacher Discount:
+Macro:【Pre-sale::Coupon/Price::C07 Teacher discount-available only in CA/UK/US】
+Military and First Responder Discount:
+Macro:【Pre-sale::Coupon/Price::C08 Military discount-available only in US】
+2.Other countries or other identities are not supported,please refer to the additional discount.
+Change the installation location [Time-consuming]
+
+
+Select one method based on the model to switch the camera's network or network connection type, and note the chosen method [Time-consuming]
+1.Camera with an ethernet port: Switch to a wired connection.
+2.Camera without an ethernet port: Switch to a hotspot or connect to another router.
+Based on the outcome to:
+a.If resolved by using a wired connection or changing the network, it indicates a WiFi signal problem. It is not recommended to escalte to L2 or replace the product.
+b.If issue persists despite using a wired connection or changing the network, proceed with the final solution.
+Auto restart issue: change to other compliant power supply equipment [Time-consuming]
+Including but not limited to: adapters, transformers, switches, sockets
+Is there any improvement in upgrading the camera firmware to the latest version on the official website (if there is improvement, we can guide customers to accept it) [Time-consuming]
+
+
+Request for SD card/HDD Clear/High resolution video of the wide-angle lens and tracking lens [Time-consuming]
+To determine whether it belongs to the above situation and whether the tracking performance could be improved.
+1.If the camera does not have SD/HDD recording, enable "Motion Mark" via 4.40 app or above version, check live view in Clear/High mode to determine whether the target is correctly recognized and request for screen recordings.
+2.If there is room for improvement, suggest customer to adjust the settings; if not, escalate RMA (No Replacement)
+Does switching the tracking mode improve the issue of poor tracking performance? [Time-consuming]
+This feature is only supported by the TrackMix series
+Introduction to Tracking Methods for TrackMix Series Cameras
+Choose any of the following methods to verify whether the camera/NVR itself is online: [Time-consuming]
+1. Switch mobile phone/computer network (WiFi/mobile communication network)
+2. Suggest customers to change their mobile phones/computers
+3. Go to UID and test whether you can reach the login interface on the corresponding App version. Enter any password. If there is an incorrect password prompt, the camera/NVR is online. Online means that the camera itself is well-connected. It is a problem on the device side and will not be replaced.
+4G Camera Log Issues and Solutions [Time-consuming]
+1.If the log shows a large number of disconnection records, remove the SD card and check if the connection improves. If it does, the SD card is faulty and needs to be replaced.
+2.If the signal strength is below 15, it might be a location issue. Try changing the location and see if the connection improves.
+Determine the troubleshooting direction based on the log results [Time-consuming]
+1.The signal strength is low, and there are disconnection records. Troubleshoot point 9.
+2.If there are no such abnormal records in the logs, troubleshoot point 10.
+Turn off the PIR and reduce the preview to see if the charging is normal [Time-consuming]
+
+
+If the customer also has a Reolink NVR, the camera may have been taken over by the NVR and assigned a random password. We recommend the customer try one of the following solutions: [Time-consuming]
+1.Disable the Auto Add feature on the NVR, delete the camera from the NVR using the monitor, and then reset the camera once again. (Make sure to follow this sequence strictly; otherwise, the camera cannot be successfully reset.)
+2.Set a password for the camera on the NVR, then use this password to access the camera directly.
+Change other compliant SD card [Time-consuming]
+For card recognition/recording/formatting/playback issues, if the customer uses a large-capacity SD card, try to use a SD card with smaller capacity to see whether it works
+For NVRs that support the installation of multiple HDDs, try moving to other SATA port to see if it works [Time-consuming]
+If it works, it is advised that the customer use a working SATA port, otherwise continue with the following Task items
+For PoE camera that are not directly connected to the NVR, connect it to the NVR directly for a try [Time-consuming]
+a. If resolved, no replacement
+b. If not, escalate to RMA
+Upgrade progress bar is stuck / Error message "Upgrade failed" / The version number remains unchanged after the upgrade
+Please note in the comment of this task which specific issue the customer reported.
+Log out of your Reolink account and log back in on the Reolink App
+
+
+When attempting to access the Smart Home or Cloud section in the app, the message "Failed to obtain configuration information." is displayed.
+
+
+It might be an unknown network issue. Please try to enter the section again.
+
+
+Request for third-party HDD information
+1. Photos of both sides of the HDD and ensure that the labels are clear and readable.
+2. Connection method of the HDD, whether it's plugged inside or outside the NVR, whether it is enclosed in a box or not
+For Home Hub Pro, just request the information listed in Point 1 only.
+WiFi camera is completely disconnected from the WiFi NVR and will not auto reconnect.
+If issue occurs occasionally, go to SOP [NVR::Connection::WiFi camera has poor connection on WiFi NVR (Camera connected to NVR's WiFi) ]
+Confirm the QNAP software the customer is using and provide the corresponding tutorial video.
+a.QNAP QVR Elite/QVR Pro (support H.265)
+b.QNAP Surveillance Station (doesn't support H.265)
+How to Add Reolink Cameras to QNAP
+Confirm Camera is Unobstructed
+Please make sure nothing is blocking the camera and the camera should be installed upside down.
+The specs of the SD card meet the requirements
+How to Choose microSD Card for Reolink Cameras
+Reinsert the SD card
+Ensure the camera is powered off before inserting or removing the SD card
+In the external network environment, Reolink device cannot be accessed from any terminal device, regardless of whether alarm notifications (such as Push or Email) are still received.
+1.The external network includes external WiFi and traffic, ask for the UID to verify it
+2.The Push or Email functions use different servers. Receiving notifications does not indicate that external network access is normal and does not affect the applicability of the SOP.
+If the camera can be powered on normally
+1.A camera with a network port can be connected to the router with a network cable to put the camera online and set it up.
+2.If there is no network port, we can send the customer a tool and guidance to allow customers to regenerate the QR code for configuration, and then add the camera in LAN. Use Macro【Tech::Device::IPC::Shared::D52 WiFi QR code generating instruction】
+
+
+If camera can be powered on normally, send a tool to customer to regenerate a QR code for configuration, then add camera in LAN
+
+
+DC charging works fine, but it hardly charges when connected to an existing wiring (transformer)
+This phenomenon is normal. Please use Macro to explain to customers.
+参考宏进行安抚
+适用于：产品功能不达预期/不满解决方案/不满产品Bug
+如果客户要找Supervisor，参考宏进行安抚
+
+
+如果客户要求换人，参考宏进行安抚
+
+
+如不接受，使用宏升级客诉L2
+
+
+使用宏升级客诉L2
+
+
+如组长无法解决，使用宏升级客诉L2
+
+
+When the temperature is above 0°C, using a DC adapter to charge the camera may result in the battery level stopping at a certain value below 90%, or the battery level may not increase at all.
+
+
+Assign different IP addresses to the duplicate cameras, and make sure that each camera's IP address does not conflict with other devices on the same local network.
+Note: Static IP addresses cannot be set via the App and must be configured using the Reolink Client. How to Set up DHCP/Static IP Address via Reolink Client
+If a user already exists, merge user first
+
+
+Merge ticket if needed: same product and same issue from the same customer
+
+
+Search via the phone/Email to review ticket history if found any
+
+
+Ask for customer's Name,Email,Product Model and Order From
+
+
+若环境因素比重大，建议客户考虑换货相近价位PoE机，或WiFi机退货，可申请大折扣补偿购买PoE机
+
+
+因WiFi连接不确定性太多，需走技术路线排查解决
+
+
+若有可满足客户需求的机器，也可提供额外20%折扣给用户购买升级款
+
+
+产品无法满足客户需求
+
+
+提供20%(最大30%，否则换货)折扣保留
+
+
+因物流运输原因导致设备物理损坏(如机身有划痕的)， 不影响机器正常使用
+
+
+首封联系直接说明免费退换货+承担运费
+
+
+硬件损坏问题
+
+
+PIR侦测问题：误报， 漏报等无法换货解决的问题，受安装环境影响较大（换货无法解决）
+
+
+跟客户强调，过了冬季如到了三月份使用还是存在此问题可以继续联系我们处理
+
+
+提供30%折扣保留
+
+
+耗电快（换货无法解决）
+
+
+直接退SP的钱，以提高改评的可能性
+
+
+SP充电问题：安装环境影响较大；充电速度无法满足客户需求（换货无法解决）
+
+
+直接申请退货退全款
+
+
+网络连接问题，如 wifi掉线， 连接不稳定， APP加载出图
+
+
+若无排查的必要性，转售后按政策退换货
+
+
+若有排查的必要性，技术L2继续排查
+
+
+升级给技术L2判断问题是否仍有排查的必要性
+
+
+同个问题已经换过2次或以上，但还是出现了同样的问题
+
+
+无法升级
+
+
+客户主动提及或PayPal处理人发现客户已经在PayPal开启了dispute/claim
+
+
+与新软件无法兼容
+
+
+新品与客户的NVR不兼容
+
+
+停产机型与现有的App/客户端/NVR等产品出现兼容问题，研发不再例外维护，解释后客户仍无法接受
+
+
+抱怨换货流程太长，太费时间
+
+
+抱怨运费，不愿意承担退回运费（多次换机，不想退回旧机）
+
+
+坚持退款
+
+
+代理商在沟通过程中表达对服务的强烈不满（包括售后方案，沟通过程和问题解决时效等），并威胁对社媒或其他公开渠道差评，或停止合作
+
+
+ZD差评原因客户选择了The agent's knowledge is unsatisfactory或The agent's attitude is unsatisfactory
+
+
+升级给组长处理
+
+
+非产品质量问题多次要求换货不同机型
+
+
+多次妥投未收到
+
+
+同个订单多次换货且不配合退回
+
+
+客户不配合标准售后方案的正常要求，或对产品吹毛求疵或利用规则多次（2次或以上）要求退换货
+
+
+若接受，则继续处理
+
+
+客户在邮件里明确提到已经不愿再跟当前的Agent沟通，并要求升级给更高的技术团队或者经理
+
+
+说明产品策略，告知转交给RMA团队提供方案
+
+
+云服务套餐/价格等调整
+
+
+非异常类问题
+
+
+由于我们主动对产品做出的策略调整，解释后客户表示无法接受
+
+
+功能正常，客户有特殊需求无法满足
+
+
+功能正常，仅因客户使用环境出现异常
+
+
+产品的功能缺失、产品的正常性能表现不符合用户预期、或产品无法满足用户的特殊用法，没有满足客户的期待和使用场景，客户坚持要解决
+
+
+第三方问题暂时无法解决
+
+
+研发确认暂无解决方案
+
+
+有折中解决方案但客户不接受
+
+
+客户对解决方案不满，解释安抚无效，客户坚持要解决
+
+
+如接受，转售后按政策提供商务手段
+
+
+APP/客户端崩溃
+
+
+客户不满产品bug导致功能使用异常，解释安抚无效，客户坚持要解决
+
+
+When using Quick Reply, it shows ”No audio answers are available. Please upload one.“, and it's not possible to download or add customized audio either.
+
+
+Common signs of automatic reboot in battery-powered cameras
+1.The camera plays the startup/shutdown sound without any manual intervention.
+2.The camera performs intermittent, regular pan-tilt movements even when no motion is detected.
+3.When continuous recording is enabled (supported on some models only), the playback shows noticeable time gaps, discontinuous footage, or sudden interruptions in recording files.
+If the camera is a Reolink Atlas PT Ultra, go to the firmware push system and push version v3.0.0.4778_25040950
+
+
+After resetting the camera, cover the lens with your hand or place the camera in a dark environment (such as a cardboard box) to check if the IR lights turn on.
+Models with speakers will emit a brief beep sound during the reset.
+Adjust the camera installation position/scene
+Avoid having light sources shine directly on one side of the lens, and ensure one of the lenses isn’t placed too close to a wall to prevent overexposure.
+Recommend using the Reolink 256GB SD card
+If the customer agrees, transfer to the RMA team and note: Offer a 30% discount for purchasing a Reolink SD card.
+Make sure that the customer is using a Reolink SIM card
+Reolink Account can only activate Reolink SIM cards, and not SIM cards from other providers. If the customer is using other SIM card, they will need to contact the SIM card providers directly for activation support.
+For cameras having Indoor/Outdoor scene, check whether the setting is set according to the installation place
+Select the Outdoor Mode if the camera is installed outdoors How to Select the Indoor/Outdoor Scene for Battery-powered Cameras
+Any of the following conditions are met:
+1.One or two images are turned upside down
+2.There are obvious deviations in the stitching of the left and right images
+Camera Image Problems
+The image is green, pink or purple / The nighttime image is completely black while daytime image is normal
+Request picture/video from customer for verification Camera Image Problems
+Image is pixelated
+Request picture from customer for verification Camera Image Problems
+Image is overexposed
+Request for pictures for verification Camera Image Problems
+Horizontal/vertical lines or black dots on the image
+Ask the video or images for confirmation Camera Image Problems
+Image flashes or flickers under certain light sources
+Camera Image Problems
+Camera displays a ghosting or smearing image on the moving object at night
+Camera Image Problems
+Request a recording showing the issue and the time zone
+The recording should capture the process where the customer attempts to call the camera stream via the smart home device but fails. It must clearly show the time and date displayed on the smart home device.
+Check whether a language other than English was selected as the system language during setup
+If so, it is recommended to restart and select English to complete the configuration first. After completion, customer can modify the language later in the settings.
+If the reported model is Argus 4, and the stitching of the preview image has very noticeable and unnatural seams, where there are clearly duplicated areas instead of slight misalignment, make sure the camera is update to the firmware v3.0.0.3773_24071700 (Available in Firmware Push System). Ignore other firmware-related instructions in this SOP. If issue persists after update, please escalate to L2 team.
+
+
+Check whether the plan is currently valid or has expired
+1.If the plan is valid but the data is used up, add-on data needs to be purchased.
+2.If the plan has expired, it needs to be renewed. Add-on data won’t work unless there is an active SIM card plan.
+3.If the plan is valid and data is available, but the camera still doesn’t work, escalate to L2.
+Customer has already purchased a SIM card plan or add-on data, but the SIM card still has no data
+
+
+Make sure input the correct SIM card number
+The SIM card number is the number located below the SIM card QR code. It is not the barcode or the ICCID. Please make sure enter the SIM card number during activation; entering the barcode or ICCID will not work. SIM Card Number Example
+When activate the SIM card, it prompts “Sorry, this number can't be added. It’s either not a Reolink SIM card or already linked to another account.”
+
+
+Camera does not appear in the list of cameras that can be added to the cloud
+
+
+Sync Brightness
+Only applicable to models that support adjusting the brightness of different lenses separately: How to Sync Brightness of the Two Lenses via Reolink App
+The accessory damages match any of the following criteria
+1.Physical damage: skin, waterproof cap, adapter, camera/solar panel bracket, antenna, network cable, SD card, so on
+Request picture/video from customer for verification
+2.Not visible damage, but it doesn't work and accessories needs to be replaced for testing; such as SD card, adapter, switches, etc.
+Request for ALL files under this this path: /Android/data/com.mcu.relink/files/log/
+
+
+The camera can be seen in the list of Google Home/Alexa App devices, but cannot be previewed
+The models that support preview in the Alexa App, refer to the table in this article: How to Add Reolink Cameras to Amazon Alexa
+Doorbell button is stuck
+Request video from customer for verification
+1.Press the doorbell, it should stop after ringing for a while, but it keeps ringing non-stop
+2.No one rang the doorbell, but it rang by itself.
+If it sounds after pressing multiple times, please choose SOP [Doorbell is noisy/vibrating/there is no sound until the doorbell is pressed several times].
+If the customer is using a Reolink SIM card, please refer to SOP [Battery 4G::Initial setup::Failed to connect to network when using Reolink SIM Card]
+
+
+Confirm that the Reolink SIM card is linked to Reolink account and data plan is activated
+How to Link Reolink SIM Card to Reolink Account
+Customer ues Reolink SIM Card with Reolink 4G cameras, but hears one of the following voice prompts during setup
+1."Data call failed. Please confirm your cellular data plan is available or import the APN settings"
+2.“Not registered on network. Please activate your SIM card and check the signal strength.”
+Charging port is melt or burnt, broken, loose, deformed, completely detached, corroded
+1.Request for picture for verification
+2.If the charging port in the image does not match the SOP, please select the SOP again:
+a.Charging port(Type-C) physically damaged
+b.Charging port(Mirco-B) physically damaged
+Confirm whether the camera's charging port is Type-C or Micro-B
+1.USB Type-C is oval-shaped and the same on both sides, so you can plug it in either way—no need to check the direction.
+2.USB Micro-B is smaller and has a flat top with a curved bottom, meaning you have to plug it in a specific way—it won’t fit if flipped.
+Reolink WiFi Extender cannot be successfully added to the Reolink NVR
+
+
+When configuring the Signal Source for the Reolink Extender, it prompts connection failed
+
+
+
+
+Ensure to use the Reolink App for configuration
+Currently, the Reolink Client does not support initializing the Reolink WiFi Extender, but once the setup is complete on the App, you can add and use it in the Reolink Client.
+Ensure the correct configuration method is selected during the setup
+1.When the WiFi Extender is NOT connected to the router via ethernet cable, select “Hotspot connection”.
+2.When the WiFi Extender is connected to the router via ethernet cable, select ”Wired connection“.
+Ensure the Signal Source WiFi is enabled
+The WiFi that the customer needs to extend is the Signal Source's WiFi, such as the Router's WiFi, Reolink NVR's WiFi, or Home Hub's WiFi.
+Confirm that the WiFi SSID and password of the Signal Source are entered correctly
+
+
+Use PING command to ping the IP address of the camera
+Provide a screenshot of the PING results to check whether the ping is successful and the latency
+Abnormal issues when the camera cannot be added or when using it with this software.
+If the issue is that the camera cannot be added, there is no need to fill in the comment section for this task. If it's a different abnormal issue, please note down the problem in this column.
+Check Home Hub settings: Ensure that the Home Hub's Sounds - Alarm Volume is set correctly and is not muted
+
+
+If Home Hub Scene Modes are enabled, ensure that the “Home Hub Siren" switch of the camera in Secne Modes settings is turned on
+Introduction to Scene Mode for Reolink Home Hub
+Check camera settings: Turn on the Home Hub Ring or Home Hub Siren button, and ensure the schedule settings are correct
+Introduction to the Reolink Siren Alarm of Home Hub/Home Hub Pro
+Doorbells: Go to Camera Settings → Chime → Home Hub Ring
+Other Cameras: Go to Camera Settings → Home Hub Siren
+Home Hub Ring(Siren) Not Sounding When Camera Detects Motion or Doorbell is Pressed
+
+
+Check if VLC have the same problem when streaming the camera
+
+
+The camera installation angle is reasonable
+Why does the Camera Fail to Trigger Alarms or Miss Alarms?
+The camera records normally when using a 128GB or 64GB SD card. However, when using a 256GB SD card, recording stops after a period of time, and playback is unavailable
+
+
+The model is Lumus 4MP
+If it's other model, please transfer to SOP [SD card is not full, stop recording/recording does not automatically overwrite/do not record]
+The battery-powered camera has normal battery consumption when operating independently, but drains faster after being added to the Hub
+
+
+The camera has been upgraded to the firmware that supports Hub. It works fine as a standalone device, but cannot be added to Hub.
+
+
+Confirm whether the camera is compatible with the Home Hub
+Reolink Home Hub Compatibility
+1.Models listed in the table in the article with a checkmark under the Release Date are supported by the Home Hub.
+2.Models listed in the table but without a checkmark, or models not listed at all, are not supported by the Home Hub.
+Camera prompts "The device does not support connection to Home Hub."
+
+
+If the camera is compatible with the Hub(both hardware and software) but still shows a "not supported" prompt, escalate to the L2 team.
+
+
+If the camera is not compatible with the Home Hub, offer a discount for purchasing a supported model. If the customer agrees, forward the case to the RMA team with a note about the new order discount. If the customer disagrees, escalate the case to the customer complaints team.
+
+
+Confirm how the customer is adding the camera to the Home Hub and suggest trying other methods to see if the addition is successful
+1.The camera is already working independently and is added to the Hub via LAN
+2.The camera is already working independently and is added to the Hub via the Device List
+3.The camera is not initialized and is initialized and added through the Hub
+After adding the battery-powered device to the Home Hub, the screen goes black, showing a prompt “low firmware version”. However, when attempting to upgrade the firmware, it indicates that it is already up to date.
+
+
+When the issue occurs, the camera is still working standalone
+
+
+If the device has been added to the Reolink software, you can find the UID on the device's settings page.
+Even it is not online, you can still check the UID on the settings page.
+The UID code on the device is lost, and cannot be added by scanning the code
+Need to provide body picture confirmation
+Instruction: How to Find the UID of Your Cameras and NVRs
+Note: The UID code of the Argus PT/Go PT series is at the bottom of the camera and may be blocked by the bracket. You can find the UID code by unscrewing the bracket【Macro B20】
+After the doorbell is installed, the UID is also blocked and needs to be removed from the wall and then the UID can be found on the back.
+More than one cameras directly connected to the NVR have obtained the same IP address, causing them to be unable to be added properly
+
+
+The camera is not set with a static IP
+
+
+Use the camera independently, scan the problematic cameras one by one with the PC client to check the MAC addresses
+1.If X cameras have the same MAC address, replace X-1 of them.
+2.If there are no duplicate MAC addresses,escalate to the L2 team.
+Restart the cameras with the same IP one by one
+
+
+If the reported model is Duo 2 PoE/Duo 3V PoE/Duo 3 PoE, and the stitching of the preview image has very noticeable and unnatural seams, where there are clearly duplicated areas instead of slight misalignment, make sure the camera is update to the firmware v3.0.0.4308 or v3.0.0.4518 (Available in Firmware Push System). Ignore other firmware-related instructions in this SOP. If issue persists after update, please escalate to L2 team.
+Click to view an example image of this issue
+Increase the value of Max Bitrate
+
+
+One of the following conditions is difficult to connect, wifi intermittently drops, auto reboot
+1.Camera randomly dropped/frequently disconnected, it cannot be accessed when disconnected
+2.The indicator light shows that the camera is offline (check this for models with indicator light)
+3.Camera shows "connection failed" and can be connected again after a few minutes
+4.Camera is disconnecting and connecting again to the router
+5.PTZ camera often rotates automatically PT
+6.If continuous recording is set, you can see that there are many gaps in the continuous recording playback
+Day and Night Mode is set to Auto and the camera is in the dark environment
+
+
+Change Transport Mode to Port or PASV
+
+
+Provide all the logs under the directory /Android/data/com.mcu.relink/files/log/
+1.Applicable for Android only
+2.The log provided must be the orignial file, not a screenshot.
+If the model is 823S1/823S1W/823S2, push the firmware v3.1.0.4366_241127 in system. Ignore other firmware-related tasks in the SOP. If the issue persists after completing the SOP, escalate to L2.
+
+
+ebay站内信回复规则
+1.不支持发送文本超链接，插入文章需发送标准的URL，例如https://support.reolink.com/hc/en-us/articles/360012306993
+2.正文不能直接贴图，图片需要以附件的形式发送，支持的图片类型包括JPEG,GIF,PNG, TIFF
+3.附件只支持图片，其他文件例如视频、固件、APK等均不支持附件发送，可以上传云盘/westransfer等再发送URL
+4.正文里禁止提及个人信息，例如邮箱或电话
+Make sure Motion Track and Motion Timestamp are both enabled
+How to Set up Reolink Motion Track
+Confirm the specific issues when Motion Track is not working
+1.Unable to receive image attachments with Motion Track
+2. In playback, received message "No motion tracks of detected targets were found in the current video file. Please select another file.
+3.In playback, the button to export Motion Track is missing.
+When open App, it prompts "Sorry, this service is not available in your area."
+
+
+Set Frame Rate Mode to Constant
+Applicable to the issue of false detection and ghosting/smearing image in night vision mode
+All Reolink cameras that support smart (person/vehicle) detection excluding battery-powered cameras support this feature
+Introduction to Reolink Frame Rate Mode
+Set Bitrate Mode to Variable Bitrate
+Only a few models support this feature
+Guide to Configuring Video Bitrate Modes on Reolink Devices
+When searching for firmware in the download center, select the correct model and hardware version. Note that firmware for online models cannot be used for offline models.
+1.Request for System Information page of the camera or NVR (hardware version*, firmware version, and UID) and note it in this field.
+2.To avoid customers downloading the wrong firmware:
+For call support, guide the customer over the phone to search for the correct firmware based on the model and hardware version.
+For email support, after finding the correct firmware in the download center based on the model and hardware version, either send a screenshot or directly send the firmware pak file.
+The indicator light does not light up after the Home Hub is powered on
+
+
+Ensure that the frequency of the light sources in the installation environment matches the camera's settings
+Especially for devices such as fluorescent lights and LED lights. Consider replacing the light source with one that is compatible with the camera's frame rate (for example, using flicker-free LED lights).
+Make sure the region settings on your phone or computer match your current physical location
+
+
+Make sure the camera and Hub are in the same local network
+
+
+Calibration
+Only applicable to models that support calibration Introduction to Reolink Camera Calibration
+Partial configuration loss
+1.New settings revert to default or previous settings after a certain period.
+2.After saving new settings, returning to the previous level and re-entering the setting, or performing other operations, leads to a restoration of default or previous settings.
+3.Please specify which configurations are being lost.
+Attempt to find the UID through the camera's association with the account
+1.In the CMS system, go to Technical Support Tools>Device Binding Query>User, search the Reolink account to find the camera UID bound to the account.
+2.Instruct the customer to log in Reolink account in the app and check if the camera automatically appears in the device list after logging in.
+The country/region setting on the phone is a country that supports cloud services
+Which Models/Countries or Regions Support Reolink Cloud Service?
+There is an active cloud plan under the Reolink account logged into the Reolink App
+
+
+Cloud panel is missing on Reolink App
+
+
+If the issue is Siren via API does not work, search for the "API" in firmware system and push it for the camera. If there is no firmware for the specific model, escalate to L2.
+
+
+Confirm that the camera has been enabled on the Reolink App Smart Home Page
+When the button shows 'Disable,' it means it has already been enabled. Request for a screenshot for verification:
+a.If the camera doesn't appear in the Reolink App Smart Home page, go to SOP-[Camera does not appear in the Reolink App Smart Home page]
+b.If the camera appears in the Reolink App Smart Home page but unable to enable, go to SOP-[Failed to enable camera on Reolink App Smart Home page]
+In Alexa App, make sure that “Doorbell Press Notifications” under Announcements is turned on
+Click to check the screenshot of Annoucements Settings
+In Alexa App, make sure that "Person Detection Notifications" and "Motion Announcements" under Announcements are turned on
+Click to check the screenshot of Annoucements Settings
+When doorbell is pressed, devices like Echo Show do not play a voice alert or auto live stream, and devices like Echo Dot do not play a voice alert.
+
+
+When the doorbell detects any motion or a person, devices like Echo Show or Echo Dot do not play a voice alert
+
+
+The doorbell has been successfully added and is displayed as a device in the Alexa app, but the Announcements setting is missing
+
+
+If the model is E1 Pro (5MP), please escalate directly to the L2 team.
+How to identify if it's 5MP: 1.Logo is new 2.Check the order information 3.Hardware version is IPC_NT1NA45MP
+Confirm at which step it failed and request a screenshot of the failure
+
+
+The camera has detected the firmware and update failed during the process
+
+
+If customer doesn't have a Reolink NVR, refer to the SOP titled "Reset button physically damaged/unable to reset"
+
+
+When setting up the camera, the customer has not set a password, yet they are prompted to enter one. Upon entering a password, an "incorrect username and password" message is displayed. Even after resetting the camera, the issue persists.
+
+
+Request for main stream videos from the SD card or HDD
+1.If the camera has no SD/HDD recordings, use the 4.40 version or newer of the App to open the main stream preview with Motion Mark. Verify whether the target is correctly identified and ask the customer to send recordings.
+2. Provide guidance to the customer for necessary adjustments(such as sensitivity, object size and detection zone). If no improvement is observed, escalate to RMA team for possible solutions(no replacement).
+For TrackMix models, ensure to ask recordings of the wide-angle lens, not telephoto lens.
+Create or adjust Non-Detection Zone
+For Reolink Altas PT series, it supports create adjustable Non-Detection Zone for ”Others“ type.
+The router that Reolink camera/NVR/Hub is connected to has Internet access
+
+
+One of the following criteria is met
+1. Battery drains quickly after being fully charged with an adapter (1-2 days)
+2. Find events.9, current-exception after using the UID to check the camera in the log system (not applicable for CC now)
+It shows "This is the most current version available" when using the online update feature, even though a newer version is available in the download center.
+
+
+Explain that the number of online upgrades is limited, and recommend customers to perform a manual upgrade
+
+
+When the camera is added to third-party software via the ONVIF protocol, the two-way audio feature is not supported.
+
+
+Please check the label on Doorbell camera and provide the the version number(V1 V2 or V3) of it
+Note the version number to the comment of this task.
+For Doorbell WiFi/PoE, there are 3 versions: V1, V2, V3. If there is no such number on the label, then it's V1.
+1. Doorbell WiFi/PoE V1 can only work with Chime V1.
+2. Doorbell WiFi/PoE V2/V3 and Doorbell (Battery) can only work with Chime V2.
+If the version is mismatched, please transfer to the RMA team to help customers get the correct version.
+Switch the camera between the NVR’s 2.4GHz and 5GHz Wi-Fi networks or connect it to a different Wi-Fi network
+How to Add Reolink IP Cameras to Reolink WiFi NVR (New UI)
+IR lights do not light up in a dark environment
+For cameras equipped with invisible infrared lights, ask customers to use their phone cameras to take photos for inspection, as the infrared light is invisible to the naked eye but appears faintly under a phone camera.
+Set the Day and Night mode to Black and White
+1.If the IR lights still do not turn on,escalate to RMA team and proceed with a replacement.
+2.If the IR lights turn on, escalate to L2 team.
+Camera Installation Requirements
+Please provide an image for verification, and kindly avoid placing the camera in the following locations:
+1.Indoors, directly facing a doorway with strong light exposure, mounted against smooth walls, or pointing towards mirrors, bright lights, or smooth, reflective ceilings or floors.
+2.Narrow spaces, such as drawers, cabinets, or very tight corners.
+3.Areas where its field of view is filled with large expanses of snow.
+IR Lights is set to "Auto"
+How to Enable/Disable IR Lights of the Camera
+Open the Reolink App, navigate to the settings page of the doorbell, and select Chime. Then, click the “+” icon in the top right corner and choose the Chime you want to pair.
+Note: One doorbell can be paired with multiple chimes. If your doorbell needs to be paired with multiple chimes (up to 5), please repeat the pairing process for the additional chimes. One chime can only be paired with one doorbell.
+If the doorbell is connected to the NVR, the NVR needs to be updated to the latest firmware to support Chime settings. If NVR is already updated and still no Chime tab, it is recommended to remove the doorbell from the NVR, configure it separately, and then pair it with the Chime.
+if camera does not auto focus after day/night switching, turn on the Night Mode Focus enhancement
+Applicable for 823A 16X only
+Day and Night is set to "Auto"
+How to Change Day and Night Mode via Reolink App
+Confirm the adding method used by the customer and give the corresponding instruction video
+a.via brand and model
+b.via Onvif scan
+c.via RTSP
+How to Add Reolink Cameras to Synology Surveillance Station
+Camera and NVR are properly grounded
+If the NVR and camera are both grounded, unplug the grounding plug of the NVR power supply; if the NVR or camera is installed on a metal surface, install an insulating object in the middle to separate it
+If the camerab is powered in Poe method, change Ethernet cable and Poe switch/ NVR R/N
+
+
+Download and install the DirectX repair tool
+DirectX repair tool
+Is Camera only accessible in a third-party software?
+It is recommended not to access the same camera from multiple third-party or Reolink clients at the same time
+If the device is an NVR, whether recordings can be downloaded successfully from the monitor?
+How to Download Recordings via Reolink NVR (New UI)
+If the camera has an Ethernet port, connect it using a wired connection
+
+
+If the mainstream of the camera is 12MP and cannot be previewed, reduce the resolution of the mainstream to 6MP/8MP
+
+
+Connect only one floodlight to the PoE switch to test
+
+
+Whether the third-party software uses the TCP connection method to solve the problem?
+
+
+Reboot NVR
+
+
+Delete the camera from the Reolink account, re-bind it, and add it to the smart home
+
+
+Adjust the installation angle
+The ideal distance is 8 meters
+Switch resolution
+
+
+Check whether there are flowers, trees, wind, reflection, strong light and other factors in the environment, place the camera to view less activity.
+
+
+Manually dragging the camera to Live view window
+
+
+Click the Playback window and then switching back to the Live View window
+
+
+Adjust sensitivity
+
+
+If there is a switch between the router and the NVR, restart the switch
+
+
+
+
+Make sure the username and password are entered correctly
+If the error is 'Username or password is incorrect' or 'Authentication Failed,' it indicates that the username and password entered by the customer are incorrect. Please re-enter the correct username and password. Note: For battery-powered cameras, only the password needs to be entered.
+If the customer has forgotten the password, please note that the password was created during the initial setup. Please restore the camera and create a new password using the Reolink App or Client on another phone or computer that is already logged in to this camera.
+Access fails on a specific mobile device's Reolink App, while the Reolink Client on other computers or the Reolink App on mobile devices connects without any issues
+
+
+Access fails on a specific computer's Reolink Client, while the Reolink Client on other computers or the Reolink App on mobile devices connects without any issues
+
+
+The camera broadcasts Chinese voice prompts, and the OSD does not display the correct date, time, or camera name, but shows strange numbers instead. And under these conditions, the camera firmware upgrade fails.
+
+
+When using the two-way audio feature on the Android App, from the App the sound from the camera can be heard, the sound from the camera is low or almost inaudible
+Request for videos for verification
+Request for UID number
+For SOP [QR code is invalid], please request for clear photo of the UID label for verification
+Disconnect Internet connection, after the camera is powered off for two minutes and then powered back on, the time is not current but instead shows as 1970, 2019, or another incorrect time.
+For 4G camera, directly power off for two minutes and then power on again
+If the time is only one hour ahead or behind, it may be related to Daylight Saving Time (DST). Please try adjusting the time zone/DST settings or manually synchronizing the time.
+
+
+Final solutions for SOP [Chime can not be paired]
+1.For Chime V2, please escalate to L2 team.
+2.For Chime V1, please transfer to RMA team.
+Long press the setting button on the side of the chime, then the chime will beep twice, and the light will illuminate blue.
+
+
+Replacement rules for Doorbell and Chime
+If you need to replace the Doorbell PoE/WiFi V1 or Chime V1, please replace the whole set, not just one of them
+If the customer confirms that the SIM card is currently working, please transfer them to the RMA team for replacement.
+
+
+Please confirm that the SIM card is activated and has sufficient data.
+Some virtual SIM cards (including EIOT) do not require activation.
+If any of the following conditions are met, it proves that the SIM card is activated and can be used properly:
+1.This card worked fine in this camera before.
+2.This card works fine in our other Reolink LTE cameras.
+3. This card can be used in a mobile phone (this condition does not apply to virtual SIM cards, as some virtual cards cannot be used in phones).
+SD card/HDD is recognized properly, recording is enabled, the recording schedule is set correctly
+How to Set up Record Schedule for Reolink Cameras via Reolink App *Battery-powered camera without smart person/vehicle detection feature does not have recording schedule setting
+Remove the SD card if there is one inside the camera
+
+
+When using outdoors, it is necessary to install the junction box or waterproof cap/waterproof tape to protect the tail cable
+
+
+Verify how the damage occurred, whether it is due to intentional or accidental actions such as dropping
+
+
+Replace the current battery with a known-good one to test the camera
+This task is only applicable for Argus 2/Argus Pro/Go/Go Plus
+whether it can be powered on by re-setting the power switch or plugging in and out of the battery
+If camera not powered issue, you need to charge the camera with DC power adapter for a few hours before performing this operation
+Ensure the installation location is not near a drain or other areas prone to water accumulation.
+1. For inverted cameras, confirm that the camera is installed in the inverted position.
+2. For Argus Track, do not install it upside down How to Install Reolink Argus Track
+If adding cameras without smart detection to the new UI NVR or adding cameras with smart detection to the old UI NVR, after performing all the above steps without success, escalate to RMA (No replacement)
+
+
+The camera can be recognized but cannot be added:For a configured camera , confirm that the IPC is not locked by login
+How to Set up Illegal Login Lockout
+The camera can be recognized but cannot be added: Make sure the camera has a unique IP address
+How to Check Camera Status on IP Channel Page via Reolink NVR (New UI)
+Switch between static IP and DHCP.
+If set to static IP, change to DHCP; vice versa.
+The router does not have the following settings enabled: firewall, VPN, MAC filtering, and AP isolation.
+
+
+客户咨询订单是什么状态，或反馈没有收到订单确认邮件
+
+
+Check whether manual PTZ and day/night switching are performed
+Manual PTZ and day/night switching will not trigger an alarm, but only trigger recording and FTP
+If the issue remains unresolved after completing the SOP, escalate to the RMA team with a note: "Advise offering alternative solutions other than replacement(Refund or exchange for non-LTE models)."
+
+
+Please select “Precise Location” when being ask ”Allow Reolink to access this device's location?"
+Applicable for Android Only
+Please select “Allow” when being ask ”Allow Reolink to discover and connect to the Devices nearby?"
+Applicable for Android Only
+Reset the camera and use another phone to set it up
+If Bluetooth is enabled and you've allowed location requests and connected to a nearby device during setup, the issue may be compatibility with certain Android phones. Do you have another mobile phone (Android or iPhone) to set up the camera? If so, please give it a try.
+Turn on Bluetooth on your phone and grant Bluetooth permissions for the Reolink App
+
+
+Confirm the time when the problem occurred
+Ask the customer: "Please let us know which of the following best describes your situation:
+1.The camera is new and has never worked since you bought it.
+2.The camera worked for a while (a week or several years) but has recently stopped working."
+If it is scenario 1, and the issue remains unresolved after completing the SOP, escalate to the RMA team with a note: "Advise offering alternative solutions other than replacement(Refund or exchange for non-LTE models)."
+If it is scenario 2, you can skip all S steps and start troubleshooting from the T steps. If the issue remains unresolved after completing the SOP, escalate to the RMA team with a note: "Replacement."
+Camera fails to connect after connecting to the solar panel, resumes connection after unpluging the solar panel
+
+
+If screen crashes when switching to the horizontal mode, advise the customer to set Diplay Size to the default setting
+
+
+Check the video information, playback and download the video through the backup page on the monitor interface to confirm whether the video is normal.
+
+
+Any of the following are symptoms of cameras displaying black screen on the NVR monitor
+1. Camera shows a black screen when being displayed in full screen
+2. Camera shows a black screen when being displayed in multi-screens
+3. Camera shows a black screen and 1080P when being displayed in multi-screens
+Easily confused SOP:
+1. If a single camera has a black screen, check the CPU or real-time bit rate in the IPC information. If one of two values is 0, go to [PoE camera cannot be successfully added to NVR]
+2. If the entire NVR screen is black (no menu at all), go to [NVR no output]
+Set up a lower Resolution and Max Bitrate for both the clear and fluent modes.
+Battery-powered devices on the 523 platform and later do not support resolution modification. Try to reduce the bit rate.
+If possible, log in to the router management interface to see if the hub is properly assigned an IP address.
+
+
+Confirm whether the IP segment of the home network is 172.16.25.x
+The way to check is to see if the IP address obtained by other devices in LAN is in the format of 172.16.25.x
+Connect your phone or computer to the WiFi of the router that the Home Hub is connected to, and use Reolink App/Client to check if Home Hub is scanned in LAN
+
+
+Push option consistently disables itself after being enabled
+
+
+Unable to complete initial configuration via Bluetooth pairing
+
+
+Reset the camera and verify if it resumes functionality
+1.If yes, it is recommended to upgrade to the latest firmware and observe if the issue reoccurs.
+2.If not, it is suggested to directly connect the camera to a PC for configuration, then upgrade to the latest firmware, and observe if the issue reoccurs. This task is complicated and challenging, so it can be skipped if the customer refuses to perform it.
+How to Connect Your Cameras Directly to the PC and Log in via Reolink Client
+If the camera is directly connected to the NVR, it is recommended not to connect it directly. Instead, connect it to the same network as the NVR to see if it can be detected and added successfully.
+
+
+Some models (RLC-823A 16X/RLC-423, etc.) will activate different infrared lights depending on the focal length. Please confirm if the customer's camera belongs to these models. You can ask the customer to adjust the focal length to check if other infrared lights turn on.
+Introduction to the Status of RLC-823A Series IR LEDs
+Request for the capture image of the main stream and confirm details
+Details include but are not limited to:
+1.Specific aspects of the image quality the customer is dissatisfied with, such as lower clarity compared to other 4K cameras, or the image being too sharp, etc.
+2.If the conclusion is drawn from a comparison with other cameras, provide snapshot images from the main stream preview of those other cameras.
+3.If the issue is related to license plate visibility, use macro [I-IPC::General::I17 license plate recognition].
+Powered on but not connecting to the internet, or initially working fine but later, while still powered on, losing the network connection
+
+
+Explain how the resolution of the screen used for previewing affects the image quality
+
+
+Image quality of the Duo 3 PoE is poor
+The image quality of the Duo 3 PoE is noticeably lower, especially when compared to other Reolink cameras like the Duo 2 PoE or those with 4K resolution.
+Adjust Encode Settings
+1.Modify the Bitrate of the Clear stream to 10240.
+2.If it is still unsatisfactory, change to 12288.
+For cameras with a LAN port, set it up with an Ethernet cable first, then switch to WiFi connection
+If it works with cable connection but not WiFi, select support topic [DC WIFI::Network::Accessible when camera is connected to the router via cable but inaccessible when camera connected via WiFi]
+Ensure the FTP Server supports text and binary transfers
+
+
+Ensure the FTP Port is input correctly
+1.In general, the default port is 21.
+2.Reolink device does not support SFTP, so it does not support the related ports 990 and 22.
+Ensure the Upload Directory is input correctly
+1. Multi-level directories can be identified with /, but / should not be placed at the beginning or the end
+2. \ should not be included in the upload directory.
+3. Make sure that the FTP user has permission to create files and folders on the root directory of the FTP server and the configured directory.
+Ensure the FTP Server is input correctly
+In the FTP server field, enter only the domain name or pure IP without any prefixes or suffixes.
+Correct example: 192.168.100.1 or ftp.domain.com
+Incorrect examples: ftp://192.168.100.1 or 192.168.100.1/reolink or 192.168.100.1:21, etc.
+Is it solved by modifying the camera stream configuration in Reolink software?
+Reduce camera resolution and bitrate, increase framerate How to Configure Stream/Quality Settings for Reolink Cameras
+Swap another mouse to test
+If not solved, transfer to the RMA team to replace the NVR.
+Disable the Illegal Login Lockout
+How to Set up Illegal Login Lockout
+Request for UID and make sure the UID is valid
+并在服务器上查询相机是否有报警
+The camera version corresponds to the country where the camera is currently used.
+Please note down the specific version in the comment, such as EUX
+How to Check the Version of 4G Cameras
+Which Version of Reolink 4G cameras Should I Choose in My Region
+Check status light
+1. red or blue
+2. Steady on or flashing
+No need to confirm if the device does not have status lights
+Synchronize device time
+How to Sync the Date and Time of Your Camera/NVR with Your Phone via Reolink App
+After installing the SIM card, the camera broadcasts “Network connection failed”. And the camera can't be accessed by the Reolink App or client.
+If the camera is Reolink Go, please turn to SOP [(Only for Go)Broadcast “Network connection failed” and cannot be accessed]
+Can rotate the camera with hands
+1. If manual rotate doesn't work, ask for video verification and then transfer to RMA.
+2. If manual rotate works, continue with the following Tasks
+Optimal Approach for Third-Party Camera Integration with NVR(LAN scan, not direct plug in)
+It is recommended not to plug the third-party camera directly into the Reolink NVR. Instead, it should be connected to the same local network and added to the NVR using internal network scanning. If the camera is successfully added to the NVR, suggest to the customer to use the system in this manner. If the customer refuses, please escalate this ticket to RMA for exploring other possible solutions.
+Turn off Hardware Decoding on the App setting page
+This task is only applicable for Android devices, not iOS.
+The OSD on the preview page is slightly delayed compared to real-time/ There's a delay and stutter in motion in the video/ Camera response is delayed when using PTZ
+If the issue exists in the main stream only, select the topic [Unable to preview the main stream]
+Confirm the current firmware version of the device before upgrading to L2, and note down the final version the customer wants to upgrade to, along with any attempted intermediate versions.
+For example: "Upgrading from 59_20081248 to 226_23031645 failed, attempted transitional firmware 200_22081549 without success."
+Meet any of the following criteria
+1. The status light flashes red and blue alternately (ask for a video for verification)
+2. Find the fields such as 4000 voltages + temperature 20℃+ 100% battery after checking the camera log with the UID （not applicable for CC now）
+3. Find that the voltage is 0 after checking the camera log with the UID（not applicable for CC now）
+4.Voice prompts interrupt
+Based on the test results, choose the following solutions.
+a.If camera still prompts "QR code does not match," follow the final solution of this SOP.
+b.If there is no beep sound when the camera scans, refer to SOP [Camera failed to scan the WiFi QR code]
+c.If the camera prompts "Connection to the router failed", refer to SOP [Camera prompts "Connection to the router failed" during the initial setup]
+The spotlight doesn't turn on when
+1.The alarm is triggered(for all models, except 823S2)
+or
+2.Being previewed at night(battery-powered camera only)
+Any one of the following symptoms
+1.Unable to connect to the camera, it prompts connection failed, and it can be connected again after a few minutes
+2.On the log of the router, camera/NVR keeps disconnecting and connecting
+3.If it is a PTZ camera, camera often rotates automatically
+4.If continuous recording is set, there are many gaps in the continuous recording playback bar
+5. The IR light and spotlight come on and off repeatedly, and the camera cannot preview normally when the this occurs.
+Query the correct UID in the CMS system
+Cloud Service>Cloud Storage & Traffic Package>Device factory information query
+1.If prompted with "The device does not exist," the UID is invalid, follow the final solution of this SOP.
+2.If information such as the model and version number can be retrieved, the UID is valid. Guide the customer to use the correct UID and select an alternative SOP. Note: Please do not disclose the information we retrieved from this UID.
+UID error or The QR code is invalid
+1.On the Reolink App, the customer received the message "The QR code is invalid. Please check if it is the code of Reolink Device" when scanning the QR code. When inputting the UID number of the camera, the customer got the message "UID error. Please check the characters and try again."
+2.On the Reolink Client, when inputting the UID number of the camera, the customer got the message "Failed to add device. Please check your network and ensure the UID is correct."
+If false alarms are caused by temperature rise, push the firmware and ask the customer to update.
+1.If corresponding version is found in server, push it and remind the customer to click "Check for Latest Version" on the Client or click "Upgrade manually" on the App to finish the upgrade.
+2.For those models without optimized firmware, upgrade them to the latest firmware.
+Request for the terminal where the issue occurred (terminals include client/App/Monitor/Web) and the version number
+Only ask for the version number when the terminal is a client or an App
+Pay attention to the troubleshooting steps for related abnormal problems after it is determined to be an old model.
+a. If there is already a general SOP, when the final processing opinion is 【Escalate to L2】, you can skip the information gathering part of item T.
+b. Upgrade to the latest firmware found in the ZD knowledge base (search for "3816M")
+c. Restore or reset (if reset is not necessary, for the convenience of the customer, restore is recommended first)
+Only select "Any Motion" or Timer recording on the Playback page and observe if there are recordings containing person/vehicle/pet that have not been marked as the corresponding type.
+Request for this SD card or HDD recording in mainstream.
+1.For the TrackMix series, Request for mainstream videos of wide-angle lenses.
+2.If the camera has no SD card or HDD recordings, use the 4.40 and above app to open the motion mark: mainstream preview to assess if the target is correctly recognized and Request for test screen recordings.
+3.Based on the videos, determine if they fall into the mentioned scenarios and assess if there is room for improvement.
+a.If there is room for improvement, guide the customer on the necessary alarm settings adjustments.
+b.If there is no room for improvement, escalate to RMA (No Replacement)
+Request for video/screen recording of the problem
+
+
+Request for the pattern of disconnection
+Only specific one camera/several cameras get offline on the NVR or all camera
+A specific camera randomly disconnects on the NVR and displays “video loss (old UI) or connection failed (new UI)" error It will reconnect after disconnecting but same issue will happen again after a while
+Request for pictures/videos for verification
+Email image attachment/first frame of email video attachment/first frame of SD card recording is overexposed
+Request for pictures/videos for verification
+The preview/playback image is completely black or white
+Request for picture for verification
+Two-way audio with echo/noise
+Request for video for verification
+Only select "Others" on the Playback page and observe if there are recordings containing person/vehicle/pet that has not been marked as the corresponding type. Request for this SD card recording in mainstream.
+1.For the TrackMix series, request for mainstream videos of wide-angle lenses.
+2.If the camera has no SD card recordings, use the 4.40 and above app to open motion mark: mainstream preview to assess if the target is correctly recognized and request for test screen recordings.
+3.Based on the videos, determine if they fall into the mentioned scenarios and assess if there is room for improvement.
+a.If there is room for improvement, guide the customer on the necessary alarm settings adjustments.
+b.If there is no room for improvement, escalate to RMA (No Replacement)
+The monitor/app/client's Storage interface doesn't show the HDD, or during playback, it prompts "HDD not detected".
+Request for pictures/videos for verification
+Request for the URL used by the customer and compare it with the URLs in the article to ensure the accuracy.
+1.RTSP：Introduction to RTSP eg: rtsp://(user name):(password)@(ip address):554/
+2.RTMP：Introduction to RTMP eg: rtmp://(ip address)/bcs/channel(channel id)_main.bcs?channel=(channel id)&stream=0&user=(user name)&password=(user password)
+Request for videos downloaded in clear/high mode.
+ForTrackMix series, request for videos of the wide-angle lens.
+Request for Client version number and video showing the problem.
+
+
+Request for system information first. If the hardware is IPC_3816M, it is considered an old model.
+When the model is: WiFi NVR: RLN4-211W and RLN4-210W, there is no need to request for the hardware version, they are recognized as an old model.
+Confirm whether the problem occurs every time and request for steps to reproduce the problem.
+For example, the problem occurs as soon as the App starts or after a certain button is tapped.
+Request for the type of FTP server
+Is it self-built or a purchased service (such as Synology NAS or a feature included in the router)?
+Request for picutures to show the camera's complete FTP settings including FTP schedule
+
+
+If any of the following situations apply, it indicates a problem with the SD card/SIM card slot
+1.The SD card/SIM card falls into the slot, and shaking the device produces a sound of the card moving inside. Proceed directly to after-sales support.
+2.The SD card/SIM card cannot be locked in place and keeps popping out. Follow the tasks below for further investigation.
+3.The SD card/SIM card cannot be removed. Follow the tasks below for further investigation.
+Please request for pictures/videos for verification.
+Request for videos or screenshots of the problem for verification
+
+
+Water has entered the camera, such as water entering the lens, body, tail cable, or the lens has obvious water mist or drops
+Request for pictures/videos for verification; if lens pictures cannot be provided, preview images can be provided to assist verification
+Request for screenshots of configuration on Reolink NVR
+
+
+Request for third-party device information
+Including model number, system information, etc.
+Request for configurations on the third-party NVR
+
+
+
+
+Request for specific commands/URLs and specific json content
+
+
+Request for returned error code, or a screenshot of the returned result
+
+
+Failed to add camera to third-party software(Unincluded)
+SOP available for following software: Blue Iris/VLC/Synology/QNAP/Home Assistant
+Request for logs and the specific time when the problem occurred
+
+
+Received Push but no Push sound
+Request for video for verification
+Request for the System Information of Drive and the specific time that camera does not upload recording to Drive
+
+
+Request for specific platform or software customers use to input/edit commands
+
+
+Request for brand and storage of the USB drive used by customers
+
+
+Request for the computer specs
+Including system, CPU, graphics card, graphics card driver
+Make sure Reolink APP is allowed to send notification
+Request for a screenshot for verification
+Request for the customer's wiring method + power supply specification (current and voltage)
+
+
+Request for the brand model and system version of Android tablet/iPad/folding screen
+
+
+Request for the problem video of Push ringtone inconsistency
+First listen to the ringtone set by the customer, and then deliberately trigger Push to see if the ringtone actually received by Push is really inconsistent
+Request for the model and number of cameras in question
+
+
+Request for screenshots of complete alarm email settings
+
+
+If the color difference is slight, advise the customer keeping it
+If it's acceptable, escalate RMA team (no replacement) to offer compensation
+Image is blurry or out of focus
+Request for picture/video for verification
+Note: The camera will not focus automatically during PT. The camera will focus only during Zoom. Therefore, during PT, including returning to the guard position/preset point, if it only involves PT and not Zoom, it is normal for the camera image to be blurry, so please focus manually.
+Request for more information about when the problem happens
+Here are some examples of common situations
+1.After automatic maintenance
+2. After upgrading a certain version of firmware
+3. When switching between day and night
+4. There is no special pattern. The camera will lose focus after a period of time. At this time, manual focus is required to achieve clarity.
+Request for specific models of third-party smart home devices
+Common devices: Google Nest Hub 2, Echo Show 8, Chromecast, etc.
+Spotlights keep switching on and off automotically
+Request for video for verification
+Request for NVR IP channel information when disconnected (screenshot required)
+
+
+Request for screenshots of third-party addition methods or configuration
+
+
+Request for model and operating system version of the computer
+
+
+The NVR is stuck at the Reolink logo page on the monitor after truning on the NVR
+Request for pictures/videos for verification
+Request for IP addresses of the NVR and the camera
+Use the network topology map to determine the connection method between the camera and the NVR:
+1. When adding within the LAN, make sure the first three digits of the IP address are the same, such as 192.168.1.XXX, and there are no special settings on the router;
+2. If the camera is directly connected to the NVR, you need to ensure that the network cable port is working properly.
+While powering on the camera, self-calibration is stuck, or camera can be rotated but makes annoying noise.
+Request for video for verification
+One of the following conditions is night vision reflection
+Request for pictures for verification
+1.After turning on the IR light, the image is overexposed/full white/with wide circles, and the image cannot be seen clearly
+2.After turning on the IR light of the camera with glass cover, the image looks foggy (models such as 842A, 543WA)
+Click on Save first, then click on Test
+Under normal circumstances, clicking "Test" will also save the recently modified FTP settings simultaneously. However, for certain models with firmware released before the year 2023, there is a bug, so it is necessary to click "Save" before clicking on Test.
+Request for the screenshots of the configuration steps added in third-party cameras
+
+
+Can be added for preview in third-party software, but experiencing issues such as screen flickering, freezing, delays, disconnections, and audio-video desynchronization.
+Request pictures or videos from customer for verification
+The issue is unclear and it is difficult to give specific guidance
+If you have a general troubleshooting idea, you can handle it according to your own idea. If the problem is completely vague, you can refer to the following steps.
+For camera with MD alarm, educate the customer how MD alarm works and advise to upgrade to a camera with smart detection feature
+a.If the customer accepts it, transfer case to RMA for cameras supporting smart detection
+b.If he doesn't accept it, escalate RMA (no replacement)
+There is no obvious movement in detection zone, but the camera still record or do other alerts
+Request for video from customer for verification
+Confirm if there is a recording saved in the SD card and if manual capture works or not
+
+
+Camera is not installed near the air conditioner condenser or other appliances that emit heat
+
+
+Preview and playback with humming sound/current noise/sound like water
+Request for video from customer for verification
+Battery issue matches any of the following criteria.
+1.When the camera is connected to the DC adapter, the battery LED flashes orange and green alternately
+2.Camera can be turned on when the DC adapter is connected, and it will be turned off immediately when the adapter is unplugged
+3.When the camera is connected to the DC adapter, the battery LED is off
+Request for pictures/videos from customer for verification
+Different cameras show exact same live image and OSD.
+Request pictures or videos from customer for verification.
+After the router restarts, wait for 5 minutes to see if the camera can reconnect to the WiFi.
+a.If yes, inform the customer to accept. Escalate RMA but no replacement will be made.
+b.If no, try connecting a smartphone to the same WiFi at the camera's location. If successful, proceed with the following tasks. If the smartphone also fails to connect, suggest contacting the router or internet service provider first.
+Unplug solar panel, use DC adapter to charge until the battery level is greater than 30%, then connect the solar panel again.
+a. If solved, it may be because the camera is at low power (about 10%), explain to the customers that the camera needs to be charged up via DC first and so that the solar panel would work. [Macro]
+b. If not resolved, it may be a fault with the solar panel or camera itself. If there are multiple solar panels and cameras, it is recommended to do a swap test to locate the issue. If swap test is impossible, replace the camera and SP at the same time.
+The camera was not powered on properly when the problem occurred
+If the camera is powered on normally when the problem occurs, it is most likely a connection problem. It is recommended to probe more to identify the problem.
+Request for the device specifications where issues occur
+Brand, model, and operating system version of the mobile phone or tablet.
+eg 1. Samsung Galaxy S22 Ultra, Android 14
+eg 2. iPhone 14 Pro iOS 17.1.1
+Camera preview not loading, continuously spinning icon
+
+
+Request for the log files under the paths below after reproducing the issue and the exact time that the issue occurs.
+1.Windows: C:\Users\%username%\AppData\Roaming\reolink\Crashpad\reports\
+Mac: ~/Library/Application Support/reolink/Crashpad/
+2.Provide the dump(.dmp) files at the time the problem occurs.
+Including but not limited to any of the following criteria and any other function issues of the Reolink camera on the third-party NVR
+① Only one channel can be added or previewed for dual-lens cameras
+②Motion detection does not work;
+③Recording cannot be set on the three-party NVR;
+④No sound in Live view/playback
+Any of the following criteria, including but not limited to a third-party camera issues on Reolink NVR
+①Cannot preview the third-party camera on Reolink NVR's monitor;
+②Reolink App/client cannot preview the third-party camera;
+③Alarm cannot be set on the Reolink NVR;
+④No sound in live view/playback
+Intermittent connection problem matches any of the following criteria
+1.Camera fails to connect most of the time
+2.When accessing, it often takes multiple attempts
+For Push/Email/FTP, educate the customer of the alarm interval function and inform that it's normal.
+Alarms of the same type can only be received once in an interval. For example, if multiple animal alarms are triggered within five minutes, it is normal to receive only one alarm email marked as animal.
+The camera is online and issue matches any of the following criteria
+1.The camera's status light is solid blue
+2.The camera is listed under the router and assigned an IP by it
+3.The PING result of camera's IP under the local network is successful
+In 8.10.X and above clients, any of the following criteria occurs.
+1.All of or any of the buttons on the live view window disappear, such as PTZ, Talk, Siren, etc.
+2.The button for switching multi-screen preview does not respond;
+3.The volume adjusting button in the lower right corner of the preview window does not respond;
+4.The calendar button on the playback page does not respond;
+5.The playback speed can only be selected as 1X
+When the doorbell is powered by the existing wiring, connect the jumper wire
+For doorbell only
+Confirm if the power supply meets our power requirement
+1.This includes, but is not limited to: ensuring the network cable and its length comply with standards, avoiding the use of power extension cords, and ensuring the switch is compliant.
+2.If the device is a doorbell: the adapter should be 24V DC or 12-24V AC, and the transformer should be 16V AC, 50/60 Hz, 30 VA. When the doorbell is powered by the existing wiring, it is recommended to connect a jumper wire.
+If any of the following conditions are observed
+1.There is noise/abnormal sound/vibration
+2.Causes old doorbells or old Chimes installed nearby to vibrate
+3.There is no sound until the doorbell is pressed several times
+Upgrade firmware between the current and the latest version, then upgrade to the most updated version
+1.During the upgrade, the primary criterion is to judge by the size of the .pak file, generally considering files of the same size as the correct transitional firmware.
+2.For cameras with a hardware number beginning with 51X, prioritize using the official firmware of 2019 as the transitional version
+Floodlight flashes randomly or flickers after staying on for a while
+Request video from customer for verification
+Lower the bitrate
+At times, you may notice the screen flickering and may be related to the environment. Verify if the environment is busy, such as a lot of trees.
+This problem exists on both mobile Phone App and PC Client software
+
+
+Confirm if the customer has multiple third-party HDDs, but only a few are problematic.
+a.If yes, educate the customer to contact the original seller for HDD replacement.
+b.If no, proceed with the current SOP.
+Try the following two steps【Macro】
+1.Hold the camera housing and the lens firmly and twist the lens forcefully up and down.
+2.Remove the lens from the housing to tear apart the lens from the black foam inside.
+Dome camera lens is stuck and cannot adjust the angle
+
+
+The camera itself is offline, which matches any of the following circumstances
+1. The camera's status light is red
+2. The camera is not listed under the router or assigned an IP address
+3. The PING result of the camera's IP times out
+The App version (Russuian and non-Russian versions) matches the location of the camera/NVR.
+
+
+Reolink App push notification is on, camera can detect normally, and Push schedule/type set by the Reolink APP meet the needs
+1.Reolink App push notification is on, camera can detect normally, and Push schedule/type set by the Reolink APP meet the needs. If the customer does not want to receive the push notification on the Reolink App, this function can be turned off, as long as the push notification schedule and type of the camera is turned on.
+2.Turn on the push switch on Alexa App: How to Use Amazon Alexa as Reolink Doorbell Chime
+If the device is the Android tablet or iPad, please turn to SOP [App adaptation problem on Android tablet/iPad/folding screen]
+
+
+Hook up the camera to the NVR directly via ethernet cable
+1.The camera can work, configure it back to WiFi, and observe the camera’s WiFi connection performance
+a.If the problem still occurs, refer to item T of the SOP 【WiFi camera has poor connection on WiFi NVR (camera connected to NVR WiFi)】
+2.The camera doesn’t work
+a.If the user has a router, user can connect camera to the router and connect to the APP/client to see if it is working
+b.Hard reset the camera, change the network cable and port on the NVR for test
+Move camera closer to WiFi NVR
+
+
+Reboot the camera and the NVR
+
+
+If the camera disconnection is caused by changing the SSID/password of the WiFi NVR, hard reset the NVR before powering on to restore the original WiFi SSID/password to see if camera can reconnect
+
+
+Configure the camera to connect to NVR 2.4G WiFi
+
+
+Confirm that the WiFi name and WiFi password have not been changed
+1.If the customer has modified it, hard reset the NVR:
+a.Power off the NVR, hold the NVR reset button, then power on NVR, hold the reset button for more than 7 seconds.
+b.Do not change the WiFi SSID and password (if other cameras have been connected to the NVR already via WiFi, the user needs to be reminded that reset the NVR before powering on will clear the WiFi configuration, other cameras will not be able to connect and need to be reconfigured)
+2.Be careful not to put any special characters on the NVR's WiFi SSID and password
+Make sure the camera is synchronized with WiFi on the TV monitor
+How to Add Reolink IP Cameras to Reolink WiFi NVR (New UI)
+Camera can be live viewed when it is plugged into WiFi NVR, but cannot be live viewed when the network cable is unplugged
+
+
+The camera is connected to router's WiFi
+
+
+For cameras with external antennas, it is recommended to use an antenna extension cable to enhance the camera signal.
+1.https://store.reolink.com/accessories/#antenna-extension-cable
+2.It is recommended to connect 2 antenna extension cables to B800W/510WA
+One of the following situations applies: WiFi camera signal on WiFi NVR is poor
+1.Camera's live view image is mosaic/frozen
+2.Random disconnection on the NVR and camera shows connection failed
+3.It can work near the NVR, but it cannot work when it is taken outdoors
+The camera is connected to the NVR’s WiFi
+
+
+Vandal proof cameras with cover
+1.843A/840A/540A/1240A, etc., please refer to the official website or specification sheet pictures to confirm the model.
+2.Put the camera to face the sun, check whether there is dust on the inner wall of the ball cover. If there is dust, wipe the inner wall with alcohol.
+Has the issue been occurring since started using this device, or did it work correctly initially but then stopped functioning recently?
+
+
+没有命名要求
+There are no naming requirements.
+Switch the file type for uploading, for instance, change from video to image.
+
+
+If the camera is currently using a 4G signal, will switching to a wired connection resolve the issue?
+a. If resolved, it is related to the SIM card signal/compatibility, and it is not recommended to change the camera.
+b. If not, proceed with RMA to replace the camera.
+Unplug all cameras and only connect the specific camera, will the issue be resolved?
+a.If solved, it is recommended that the customer use additional power supply equipment to power the camera and if it can work, considering using it in this way. If it still cannot work normally, replace the camera.
+b. If not, replace the camera.
+If the FTP server is configured with IPv6, disable the IPv6 configuration option.
+
+
+Check the NVR logs. If there is only a "startup" entry and no "restart," try changing the wall outlet or using a different power supply.
+
+
+If the customer uses a Gmail or other email that supports App password, create an App password and use the app password as the password of the sender email
+What is the Sender Email Address and Password for Email Alerts
+After fully charging the camera, observe whether the white indicator light can illuminate normally.
+
+
+Allow the FTP server through the firewall
+
+
+Unplug and replug the solar panel
+
+
+The camera can be charged with a DC power, but not with a solar panel.
+
+
+Check if there's still enough space or storage on the FTP server
+If the server storage is almost full, manually delete some files first
+Pan or tilt to a certain angle, then camera will disconnect
+It may be that the wire has been twisted or pulled loose. It is a hardware problem caused by the structure. Escalate RMA directly.
+Check if the sender email address has restrictions on sending frequency, leading to frequent interceptions.
+
+
+Check the configurations of the recipient email address
+1.Ensure that there is sufficient space by deleting some emails to verify.
+2.Confirm whether the recipient only allows email addresses in the whitelist to send emails or ensure there are no blacklists.
+Is the router firewall configured with a whitelist/blacklist that may result in the interception of SMTP server IP addresses?
+
+
+Rebind Reolink Smart Home Skills in the Google Home App/Alexa App
+
+
+Share a video demonstrating the issue
+
+
+Replace the short network cable, network port, or use a compliant adapter.
+
+
+After successfully connecting the camera to the network, when added to the app, clicking on the camera results in a failure to load initialization information.
+Indicators of successful connection:
+1.Models with QR code scanning capability provide a voice prompt saying "connection to the router succeeded."
+2.For 2.4GHz models, a voice announcement confirms "network connection succeeded."
+The device does not appear in the Scan Device(s) in LAN, and prompt connection failed when added using both UID and IP address.
+Battery-powered devices do not support add via IP; they can only be added using the UID.
+Do not enable special network rules such as disabling broadcast/port forwarding on the router.
+
+
+
+
+Use the Client to download the same time-lapse file.
+
+
+Use the App to download the same time-lapse file.
+
+
+Camera is previewed normally on the Reolink client/App
+
+
+Plug the problematic camera to the router (work alone without connecting to the NVR) with a power adapter or PoE switch. Check if the camera can be accessed as a stand-alone camera on the App/Client.
+
+
+Unplug all the cameras, and then connect the cameras back one by one to see if the problem is caused by a specific camera or PoE port of the NVR.
+
+
+After updating App to 4.36, the aspect ratio of the media player is 1:1
+Depends on the camera resolution, 16:9 image has no black border while 4:3 image shows black borders at the sides of image
+Reinstall the app or install the previous working version.
+
+
+Check if the problem occurs to a specifc mobile phone (Android or iPhone) or all of the tested mobile phones.
+
+
+Turn off "Automatic Client Update" under the Client settings.
+
+
+Failed to upgrade the Cient after clicking the update button in the prompt message box of the Client.
+
+
+Restart the Client/APP to reconnect the camera/NVR.
+
+
+Change the download path to a different disk under Client settings.
+
+
+Use the installation-free version.
+
+
+Use the Client to download recordings.
+
+
+Does the same problem occur on the App?
+a.Yes, choose “Preview Delay/Freezes” SOP to troubleshoot
+b.No, continue this SOP
+Make sure the phone's sound is turned on, and the push sound of other apps can be heard.
+
+
+Only the App is having issues and the Client/web performs the same function without problems.
+
+
+Only the Client is having issues and the App/web performs the same function without problems.
+
+
+If the latest Android App doesn't help, try the old version 4.35.1.1
+
+
+If Reolink Client is pinned to the taskbar of the computer, unpin it.
+
+
+Use the Client version 8.12 or newer. If there is a new version, the prompt only occurs once after launching the Client.
+
+
+Both the App and Client cannot connect to the NVR.
+
+
+Open all UDP ports (range 1-65535) on the router.
+
+
+Cameras works on the phone App when the phone is under the same network as the PC.
+
+
+Any of the following situations apply.
+1.In Client versions 8.10 and above, there is sound during preview but no video.
+2.The device shows "connected" on the device list, but the preview window does not display video.
+The Client is experiencing any of the following issues.
+1.The Client crashes and closes unexpectedly.
+2.The Client displays a black screen right when loading the camera preview.
+3.The Client turns black after running for a short period.
+Exit the App from the background on the phone and restart the App.
+
+
+When the WiFi camera drops offline from the NVR, can the camera still be accessed individually through the App or Client?
+a.Yes, proceed with this SOP.
+b.No, choose the SOP “Network::WiFi disconnection/Connection difficulties/Auto restart”.
+Various compatibility issues on an Android tablets.
+Including but not limited to:
+1. Crashing after running for an extended period.
+2. Crashing during horizontal screen preview.
+3. Other issues specific to the tablet, while the same version of the app works fine on a mobile phone.
+Does removing all hard drives resolve the issue?
+a.If resolved, reconnect or replace the hard drives to test.
+b.If unresolved, continue this SOP.
+Camera broadcasts "connection to the router succeeded", but the Reolink App/Client displays "connection failed" when adding camera.
+
+
+The camera can be accessed successfully.
+
+
+Perform a siren test: Enable Siren on the settings page, and move left and right in front of the camera at a short distance. Observe if the siren is triggered.
+a.If successfully triggered, it indicates that PIR is still functioning.
+b.If there is no response, it may be a hardware issue. Continue this SOP.
+If using a power extension cord, remove it.
+
+
+Press the button several times.
+
+
+Correctly set the push notification ringtone.
+1.For iOS users, directly operate within the Reolink App's settings page.
+2.For Android users, click on "Notification Sound" in the Reolink App's settings page and jump to the mobile phone's Miscellaneous settings to choose the ringtone.
+After uninstalling the Client completely from the computer, download and install the latest Client on the Reolink website.
+
+
+Camera is named in English without numbers.
+For example, front door
+HDD is recognized by the NVR.
+
+
+Switch to the Live View page, wait for the live stream to successfully display, and then switch to the Playback page.
+
+
+Make sure all of the port switches are turned on.
+1.Advise to do this task on the latest client or web interface and ask a screenshot to verify the ports are indeed enabled.
+2.If it's an NVR, it can also be operated on the monitor plugged into the NVR.
+The router has dual frequencies, but the camera can only connect to either the 2.4GHz or 5GHz WiFi.
+
+
+Make sure that the 2.4GHz and 5GHz WIFI have different SSIDs.
+
+
+If one of the following conditions is met, PIR underreporting
+1.The target is almost out of the drawing camera before the video recording begins
+2.There is movement in front of the camera, sometimes the alarm push cannot be received or there is no relevant alarm video or the alarm email is not received or the siren does not ring
+3.The PIR detection distance is short
+Can the connection be restored each time through a certain operation, such as restarting the camera and router, or resetting the camera?
+If yes, please specify which operation.
+Turn off hardware decoding on Reolink Client's Client setting.
+If the Client crashes too quickly and there is no time to open the Client settings to turn off hard decoding, disconnect the computer network first and reopen the Client to try again.
+The camera prompts "QR code does not match" after scanning the QR code.
+
+
+Ensure that the QR code scanned by the camera is the WiFi QR code displayed in the Reolink App, and not any other QR code on the camera body or box.
+
+
+Access the camera only through one application (App/Client).
+
+
+Connect the camera to the phone's hotspot or another router's WiFi.
+
+
+Compare with the App and Client to check if the same problem occurs.
+
+
+Upgrade the firmware under the local network.
+
+
+The firmware update progress bar moves a bit, but remains stagnant or displays "Upgrade failed".
+
+
+When connecting an external hard drive via the eSATA port, make sure to use an additional power supply for this hard drive.
+
+
+Confirm that the HDD used is the original one or aother HDD that meets the specifications
+Take photos of both sides of the HDD and ensure that the labels are clear and readable.
+How to Choose HDDs for your NVR
+Analysize tracking strategy according to the video。
+If it is an old tracking strategy, it is recommended that customer upgrade camera to the latest version to use the new tracking strategy.
+1.Old tracking strategy: When the target deviates from the center of the screen, camera will start tracking.
+2.New tracking strategy: When the target touches the upper, lower, left, and right edges of the live view screen, camera will start tracking.
+Disable IPv6 on the router.
+
+
+Use the default media port number 9000.
+
+
+Allow Reolink Client through the computer firewall.
+
+
+Maintain a distance between your phone/computer and the camera when using two-way audio.
+
+
+After powering off the NVR, reconnect the HDD by unplugging and plugging it back in.
+
+
+The HDD capacity meets specification and is a surveillance-level or higher-level HDD.
+How to Choose HDDs for your NVR
+The image is still abnormal after a hard reset
+Make sure that the camera is reset while powering up
+If camera has an antenna, make sure that the antenna is tightened
+
+
+Swap a working Ethernet cable and Ethernet port to test
+a. If resolve, issue should be related to the cable/port, no replacement
+b. If not, escalate to RMA
+Camera disconnects once the spotlights/IR lights turn on
+
+
+Make sure that there are less than 2 simultaneous mainstream access
+If camera is hook up to an NVR, it will occupy one mainstream access
+The device loses configuration if one of the following issues is happening
+1.All the settings go back to default after a restart
+2.All the settings randomly go back to default
+3.Camera keeps prompting the reset beep sound
+4.Camera keeps saying "Factory reset succeeded. Please release reset button" or camera keeps prompting the initial welcome message after working for a while
+If the camera and third-party device are not in the same local network, need to do port forwarding
+
+
+Confirm if this happens to one or multiple functions
+
+
+Make sure that the camera/NVR is online
+
+
+Adjust the "Image Stitching" settings
+How to Set up Image Stitching via Reolink App
+SD card can be recognized correctly
+
+
+Exit and re-enter the App, after successfully loading the preview image, enter the playback page again to playback the recordings
+
+
+Image freezes/delays/keeps loading under Clear mode but works fine under Fluent mode
+
+
+Change a sender email address to test
+
+
+Make sure that the camera is far away from electronic equipment like speakers to avoid interference
+
+
+While using the 2-way audio, keep a certain distance between the phone and the camera to avoid interference
+
+
+Put on earphones to use the 2-way audio
+
+
+Both the "Record Audio" option and the speaker on the preview page are turned on
+
+
+If the camera is installed outdoors, turn off "Anti-flicker"
+How to Setup Anti-flicker
+Restore "Advanced Image Settings" to default
+
+
+If the image is completely white, set the "Anti-flicker" to 50Hz or 60Hz to test
+
+
+There is no noise while previewing
+
+
+Move the camera to another quiet position
+
+
+Camera randomly shows video loss (old UI) or connection failed (new UI) on the NVR and then reconnects, but will happen again after a while
+
+
+If the nighttime image is completely black, confirm if the IR lights or spotlights settings are correct and if they can light up in the dark or not
+a. Yes, but the image is black (can still hear audio and see OSD)，escalate to RMA
+b. No, select support topic [Night vision IR light does not light up] or [Spotlight does not light up]
+Reset and reconfigure the camera
+
+
+IR lights keep switch on/off in black and white mode
+Only for E1 series with smart detection
+Issue only happens during the nighttime, and works fine during the daytime
+
+
+If the internal wiring is loose, reconnect the wiring
+
+
+No sounds and status light remains off after a hard reset
+
+
+Adjust the angle of the light so that it does not block the CDS
+
+
+Any of the following are symptoms of HDD not recording
+1. HDD does not record at all
+2. The HDD often stops recording (all cameras stop recording at the same time). You need to restart/reset the NVR or format the HDD to record again.
+3. HDD does not automatically overwrite
+If HDD cannot be recognized, select support topic 【HDD Not Recognized】
+If either the NVR or the problematic camera is an old model (does not support smart detection), escalate to RMA (No replacement)
+
+
+If the camera has a Ethernet port, connect it to the NVR directly
+If resolved, no replacement
+Switch phone's wifi/cellular data and retry
+Avoid loading failure caused by temporary poor network on the phone
+Unplug the HDD or change another HDD
+a. If resolved by unplugging the HDD, upgrade NVR to the latest firmware and reconnect the HDD, see if it can work again
+b. If not, confirm if it is the original HDD, swap another HDD to test if possible
+c. If not resolved, escalate to RMA to replace the HDD
+There are recordings saved but cannot be played on the monitor
+
+
+No files generated after setting up time lapse
+
+
+
+
+The time of the mobile phone that sets up the time lapse must be consistent with the time of the camera
+
+
+After connecting the mouse to the NVR, the indicator light of the mouse does not light up or the mouse cannot be operated on the NVR
+
+
+Mouse works fine with PC or other devices
+
+
+Confirm if it is a wired mouse or a wireless mouse
+
+
+WAN connection fails intermittently
+
+
+Will downloading a smaller recording (less than 100MB) be successful?
+
+
+Switch the live view mode (Clear/Fluent) to test
+
+
+Numbers of the connected cameras does not exceed the NVR limit
+only for 423/823A
+Unplug other cameras, only connect the problematic cameras to the NVR to test
+
+
+When camera disconnects, check if the IR lights are still on by covering the camera lens
+
+
+If there is another WiFi camera, connect it to the same WiFi and see if it will work or not
+
+
+Upgrade the App (for both Android and iOS) to 4.37, then there will be no black borders in multi-screens and immersive mode, and the menu bars are also optimized
+
+
+Confirm the resolution of the mainstream when the issue happens
+Correct demonstration:3840*2160; wrong demonstration:8MP
+The NVR does not restart when the camera is not directly connected to it, but will restart when cameras are directly connected to it
+For example, restart randomly several times a day
+Manually verify if the UID can be accessed remotely on our end.
+Test the same UID with the Russian and non-Russian versions one by one. Prioritize using the App/Client version that matches the location of the camera for verification.
+a.If one of the versions works, advise customers to use the working version as ours.
+b.If both versions fail to access, choose "Wan access failure" SOP instead.
+If camera uses a SIM card to connect, suggest customer connect the camera hardwired for a test
+If a wired connection fixes this problem, the problem might be the weak signal of the SIM card. It's advised to keep the wired connection or try a different supported SIM card.
+Enable FTP "Timer" schedule 7*24
+
+
+Switch push notification sound
+
+
+Change USB stick
+There is no limit on the size and capacity of USB stick, but if the customer's USB stick is relatively large, such as 1TB, it is recommended to change to a smaller capacity USB stick
+Format the USB to FAT32
+
+
+USB stick can be recognized by PC
+
+
+Can the recordings be loaded and played properly on the NVR monitor
+
+
+If the Wi-Fi is not detected, manually enter the Wi-Fi name and password to add the Wi-Fi
+
+
+Minority or custom SMTP server needs to be checked by the user or consult the service provider's SMTP server authentication mode
+At present, our cameras only support plain, login, cram_md5, and don’t support other authentication modes such as oAuth2
+Go to the official website to download and install Reolink Client
+
+
+Download recordings in low resolution in the local network
+
+
+If the camera is added to 3rd-party software in WAN, make sure the camera port is forwarded on the router
+How to Forward Ports on Router Interface for Reolink Products
+For Android phone, make sure that it can communicate with Google services
+The mobile phone must support the Google framework and be able to connect to Google's server, such as using Google Search
+Click Push Test to see if the test push notification received is also delayed.
+If it is still delayed, check the mobile phone and camera networks. Customer can switch the mobile phone network (wifi/cellular data) and camera networks (different wifi/hotspot/different 4G).
+Cannot be added no matter add by UID or IP address
+
+
+Switch different resolution under FTP settings
+
+
+The camera is connected to WIFI. But it uploads Fluent recordings to the server when the customer's setting is Clear.
+
+
+Camera doesn’t upload pictures to the FTP server according to the interval set
+
+
+The Mic/Speaker is not blocked by things like dust or films
+
+
+Camera supports spotlight
+Which Cameras Support the Spotlight
+One of the following conditions is missing detection of smart detection
+1.A person/vehicle/pet passing by, but no corresponding alarm such as Push/Email/Siren/Record/FTP/Spotlight.
+2.Person/vehicle/pet appears in continuous recording/Any Motion, but these recordings don't appear after using the filter feature. (Only suitable for Battery-free cameras)
+No pictures: reduce the resolution of the mainstream; No videos: reduce the resolution of the sub-stream
+
+
+Try downloading in the local network (Not applicable to 4G cameras)
+
+
+Turn off the PIR, live view camera, whether the movement of person/vehicle/pets in front of the camera will cause the spotlights to turn on, and whether the spotlights will turn off after stopping the movement
+If yes, it is a software bug, escalate to L2
+Set Spotlight to always on, if works, switch back to Auto and monitor it
+
+
+Change the USB port
+
+
+Download the video through NVR monitor or APP/client to check whether the video is normal
+
+
+Confirm individual cameras videos or all cameras videos cannot be played back
+
+
+Power off and restart the camera
+
+
+First connect to the working frequency band, enter the settings of the camera to swich to the other one
+
+
+The WIFI of the corresponding frequency band can be successfully connected by the mobile phone/computer
+
+
+Check the camera model to confirm the camera supports dual-band WIFI
+
+
+When the camera keeps running, the email notification will only send out over 5 minutes interval, the push notification will only send out over 30s' interval; if the battery is low, the spotlight light will not light up even the camera is triggered.
+
+
+Smart detection zone setting meets the requirements
+1.Mare sure that the event are all in the non-detection zone. If the part of the event is in the detection zone, it will also be captured by the camera
+2.Smart detection is a rectangular frame, and the non-detection area needs to cover the entire Smart detection rectangular frame
+Camera can trigger corresponding alarm
+1.PIR needs to be triggered for Battery-powered cameras
+2.Smart detection needs to be triggered for Battery-free cameras
+When there is a motion in front of the camera, sometimes no push notification, recording or other alerts
+
+
+Is there a pattern of the camera issue (for example, the camera disconnects at 2am every Sunday)
+1.If there's a pattern, it's advised to turn off the auto-restart or auto-reboot under the router settings. If this tip fixes the problem, convince the customer to keep the settings and accept the situation.
+2.Turn off the auto-reboot under the camera settings. (only applicable for battery-free cameras)
+3.Turn off the auto-reboot under the third-party software, NVR, or NAS if the camera is working with any of them. (only applicable for battery-free cameras)
+No privacy area is set, because motion in the privacy area will not trigger the alarm
+
+
+No sound when manually triggering the siren
+How to Manually Trigger the Siren of your Camera
+No sound output from the camera when the customer uses the two-way audio
+
+
+The installation meets the requirements, and there is no obstruction around the camera
+
+
+The spotlight settings are set correctly
+According to the specific needs of the customer or different camera models, check whether the spotlight settings are correctly set
+How to Configure Spotlight Settings for Your Camera
+Adjust image settings
+Adjust brightness, exposure, etc.
+If the picture is reddish, purple, etc.:
+1.Please confirm the camera is not exposed to strong direct light or objects that are likely to cause reflection. Avoid placing the camera indoors facing a doorway with strong light sources,a smooth wall, a mirror, a headlight, or a reflective ceilings, floors, etc
+2.Check whether the picture provided by the user is a complex scene such as grass. It is recommended to test it in other simple scenes, such as facing a white wall
+Change sender's email type
+1.For example: Change from Hotmail to Gmail.
+2.For less common or custom SMTP servers that require an SMTP username (different from the sender's email), it is currently not supported.
+If any of the following conditions apply, the SD card cannot be formatted
+1.The SD card is continuously shown as "not formatted" in the software, and attempting to format still prompts "not formatted."
+2.Attempting to format the SD card results in an "operation failed" message.
+3.It indicates successful formatting, but the available memory on the SD card remains unchanged.
+The camera can pan and tilt but fails to track
+Any situation where the camera is initially tracking a target but stops or fails to continue tracking applies to this SOP.
+SD card installed correctly but not detected correctly
+The following two situations are included:
+1.When it prompts "No camera SD card is detected. You may not access playback feature." or the Storage section shows "Not detected."
+2.When the SD card is recognized but displays 0GB.
+The device's IR or status indicator light does not illuminate after powering on
+Please pay attention to distinguish the type of power supply being used (PoE switch/PoE NVR/DC power/ battery).
+Request images of partially non-illuminated or dim IR LEDs/spotlights
+
+
+Does preview and playback work after switching to sub stream?
+
+
+Are the Image Settings default?
+If not, restore to default.
+Adjust the Anti-flicker
+Try all options(Other/50Hz/60Hz/Off) under Anti-flicker
+Device settings are accessible
+
+
+Make sure all camera port switches are turned on
+Advise to do this task on the latest client or web interface and ask a screenshot to verify the ports are indeed enabled.
+The phone/computer can play other multimedia sounds properly
+
+
+Format the SD card
+
+
+Preview is working, but playback cannot be loaded in 2 software or above
+The App playback page prompts "Failed to load video info. Please tap to retry", and the Reolink Client playback page video cannot be loaded
+Turn on/off the hardware decoding(Not applicable for iOS devices)
+Introduction to the Hardware Decoding on Reolink App/Client
+Tracking and Alarm Detection settings meet requirements
+1. Tracking function is enabled.
+2. All tracking types are checked or the corresponding types are checked (For example, if users report that camera does not track person, they need to ensure that person is checked for the tracking detection type).
+3. Smart Detection Sensitivity, Detection Zone, Alarm Delay(battery cameras don't have this setting) , and Object Size are set properly.
+4. The Tracking Horizontal Range, Tracking Schedule Object Disappears and Object Stops settings meet the requirements.
+The SD card/SIM card is installed correctly and in the correct direction
+
+
+Smart detection alarm-related settings are correctly and reasonably configured
+1.AI Sensitivity, Detection Zone, Object Size, and Alarm Delay (not applicable to battery-powered devices) are set properly. How to Configure PIR, Motion and Smart Detection Settings
+2.Enable surveillance action and schedule accordingly, choose or skip detection types as needed. For example, to receive human push, turn on push and select person in push schedule. To avoid vehicle push, don't select vehicle in schedule.
+Network cable meets specification requirements
+What Ethernet Cable Can Work with Reolink Cameras
+Doorbell models power supply guidelines
+1.Use the original adapter; if unavailable, the adapter should be 24V DC or 12-24V AC.
+2.If using a transformer, it should be 16V AC, 50/60 Hz, 30 VA.
+3.If powered by existing wiring, consider using a jumper wire.
+How to Install Reolink Video Doorbell Cameras to the Existing Doorbell Wiring
+Confirm that the PIR button is turned on and set the appropriate sensitivity
+How to Set up PIR Sensitivity via Reolink Software
+The camera's password should avoid including special characters (such as /, @, :) from the RTSP URL.
+
+
+Modify the camera’s IP address
+It is suspected that the problem is caused by the IP being blocked by the FTP server. It is recommended that the customer change DHCP to Static and modify the last digit of the IP address, such as 192.168.0.1 to 192.168.0.3. Be careful not to duplicate it with other devices in the LAN.
+The camera cannot reconnect to the network after the router stops working for a period of time
+In any of the following situations, the camera cannot automatically reconnect to the network and is still offline.
+1. After restarting the router.
+2. The router is powered off for a period of time and then powered on.
+3. The router connects to the network after being disconnected for a period of time.
+Camera does not PTZ, turn to preset/monitor point before tracking.
+It will take 15 seconds for these operations to start tracking. Also, modifying the tracking method, tracking type, and mirror/flip during the tracking process will stop the current tracking.
+If pir is not triggered over 5 minutes, the current tracking will stop
+Cooperate with adjustment of the following settings to optimize problem of smart detection false alarms in non-detection areas
+Smart detection sensitivity, alarm delay, and object size
+Is it resolved by replacing the HDMI/VGA cable?
+1. If the problem is solved by replacing the same type of cable, it is a cable problem;
+2. If the problem is solved by changing to a different type of cable, it is recommended that the customer use the current cable;
+3. If the problem cannot be solved, continue with the following tasks.
+No output on the monitor after turning on the NVR
+
+
+It has nothing to do with power supply and can be verified by the following method:
+1. Turn off the IR light or spotlight before and PT camera
+2. If there is a power extension cord or network cable that exceeds 100 meters, remove the extension cord or use a short cable to test instead.
+WiFi cameras can be accessed individually on the App/Client
+
+
+Camera with smart detection, on Record/push/siren/email/FTP schedule, etc.
+Make sure only Person/Vehicle/Pet is enabled, Any Motion (Battery-free cameras)/Others (Battery-powered cameras) is disabled
+Receive a person/vehicle/pet alarm but there is no corresponding moving target in the email photo or recordings
+
+
+The camera can still be powered on or accessed and the battery level has not increased on the App
+Otherwise, turn to SOP [camera not powered on]
+The settings page on the NVR cannot be loaded, such as the detection page, detection area, etc.
+
+
+Is the problem solved by unplugging the cameras on the NVR?
+a. If the specific camera is confirmed to be a reolink camera, change the camera.
+b. If there is a specific network port, change the NVR
+Camera does not PTZ, focus, turn to preset/monitor point before tracking.
+It will take 15 seconds for these operations to start tracking. Also, modifying the tracking method, tracking type, and mirror/flip during the tracking process will stop the current tracking.
+Camera identifies motion as Person/Vehicle/Animal type
+If the motion is not recognized as Person/Vehicle/Animal based on the video type or Smart detection tool analysis, select【Smart detection doesn't work】SOP.
+Camera broadcasts "Data call failed. Please confirm your cellular data plan is available or import the APN settings"
+
+
+Make sure software and firmware are up to date
+
+
+The final solution for the old model (based on this, do not refer to the regular SOP):
+a. If the problem does not affect the use of basic functions (preview, playback, etc.), the discount will be retained: Escalate RMA (No Replacement).
+b. If it affects the use of basic functions or the customer is particularly concerned, provide a new discount: Escalate RMA.
+Summarize the two most likely problem types through the customer's description
+Ask customer to confirm whether his problem is one of them. If it is neither, ask the customer for a more detailed explanation.
+
+
+If the problem involves our App/Client, you need to confirm that customer is using the latest version on the official website
+Mark down the current App/Client version
+Confirm that the camera/NVR has been upgraded to the latest version on the official website
+Mark down the camera/NVR has been upgraded from version xx to version xx
+The customer's problem has been identified, but no SOP is available
+
+
+Night vision is completely black, check whether the IR light/spotlight is enabled, and whether they are on normally in darkness
+1. If lights turn on normally, but the screen is still completely black (audio is smooth, OSD beating normally), there is a high probability that it is a hardware problem;
+2. If lights do not turn on, select【IR lights don't light up during the night】 or 【Spotlights cannot be turned on】 SOP
+If there is obvious physical damage, confirm how it was damaged, whether it was man-made or dropped, and escalate RMA
+Otherwise, continue with the following Task items
+Check if the camera is triggered by different detection types in the set interval
+Each detction type has an independent trigger interval, which means it's expected that the camera might upload a few pictures triggered by different detection types in the set interval.
+For SD card/SIM card cannot be taken out issue, poke SD card/SIM card with a needle or reset pin, whether it can be ejected
+If SD card/SIM card cannot be ejected, transfer to RMA team
+Camera doesn't return the correct guard point after PT or automatic tracking or the preset point shifts from its correct point
+
+
+The camera status led light is red
+
+
+For water sound problem, if the above SOP is processed, but problem still cannot be solved, escalated to RMA (no replacement)
+
+
+Third-party cameras have been added to Reolink NVR
+
+
+Reolink cameras have been added to third-party NVRs
+
+
+The HTTP/HTTPS port is open and matches the port number used in the URL
+
+
+The camera can be accessed normally with IP address
+
+
+Error messages are returned when using API/CGI commands
+
+
+The delay increases after the client runs for a long time
+Video/picture verification required
+After inserting the SIM card, the camera prompts the content below.
+“Not registered on network. Please activate your SIM card and check the signal strength.”
+For Duo floodlight PoE/WiFi, if customer has done a firmware upgrade earlier, need to confirm the firmware is correct
+Confirm that the actual model of the camera is Duo Floodlight PoE/WiFi by UID or order number. If the upgrade is wrong, the camera model on the System Info page will be displayed as Duo 2 PoE/WiFi
+All uploaded files are 0kb or no files are uploaded
+
+
+Part of the uploaded file is 0kb or only part of the file is uploaded
+
+
+The camera is not displayed in the smart home page of the Reolink App
+
+
+Get "JavaScript Error: Failed to get pictures path" error while trying to install the Reolink client v8.10.X or newer version
+
+
+Ensure the FTP server account is not limited
+Verify methord: Ask customers to create a new FTP account with read and write permissions, and added to the camera to verify.
+- Still doesn't work, it should be limited and ask them to check the FTP server account settings.
+- Work, resolved.
+Ensure the user account and path have permission to upload, download, delete, etc.
+For example: Ask the customers to log in to the same FTP account on the FileZilla client to ensure they can manually upload pictures/video files to the same path the camera sets.
+- If they cannot, ask them to change the permission for the FTP account.
+- If they can, check, then go next.
+The camera should not be installed near glass or other easily reflective objects or close to walls
+The lens is clean and there are no cobwebs or other obstructions in front of the lens
+Smart Home Not Notified After Camera Detects Motion
+
+
+The PT angle becomes smaller and smaller or the range that can be rotated is smaller than the normal range
+
+
+Failed to download SD card/HDD recordings via the Reolink client
+
+
+Replace the compliant network cable, whether the camera can work
+
+
+Change the port, whether the camera can work
+
+
+If there are other working cameras, exchange to test to see if the same port can work
+
+
+Camera cannot play stream on Blue Iris
+
+
+The port number configured for the camera is consistent with the port number filled in on the third-party NVR
+you can compare and confirm the Reolink camera port setting page and the third-party NVR adding page)
+Provide with the original GitHub link of integration
+
+
+Camera or NVR cannot play stream on VLC
+
+
+The camera cannot be scanned by QNAP, or the camera cannot be added after being scanned
+
+
+The camera cannot be scanned by Synology, or it fails to be added after being scanned
+
+
+The port number configured for the third-party camera is the same as the port number filled in on the Reolink NVR
+It is possible to compare and confirm the third-party camera port setting page and the added page of Reolink NVR
+The third-party camera supports the Onvif function and is turned on
+
+
+The third-party camera cannot be scanned by the Reolink NVR, or it has been scanned but failed to be added
+
+
+The third-party NVR supports the Onvif function and is enabled
+
+
+The Reolink camera cannot be scanned by the third-party NVR, or it has been scanned but failed to add
+
+
+The smart home App device page does not detect the camera
+
+
+Confirm that the camera is not bound to a cloud plan, if so, unbind it from the cloud, and then bind the camera to Drive
+
+
+The video is not uploaded to Drive, but the SD card has the video
+
+
+PTZ/Spotlight/Two-way audio/Audio cannot be opened or prompts Operation Failed, and cannot be opened in 2 software or above
+
+
+Prompt that the USB failed to be recognized
+
+
+Make sure that the lens is clean
+
+
+The SP is installed correctly and the interface is tight
+
+
+The image is normal when in the daytime or when the IR lights are OFF
+
+
+Try to change the resolutions of the main stream
+it is best to try every resolution of the main stream
+
+
+
+
+Make sure the SMTP Server is filled in correctly
+Attach a guide article or Google the SMTP server corresponding to this mailbox type https://support.reolink.com/hc/en-us/articles/900000628466
+Use the app/client to see whether he can play the recordings successfully
+
+
+There are recordings in the timeline but failed to paly the recordings via the software
+
+
+Can play the recordings successfully via the monitor connected to the NVR
+
+
+If it is at the end of the playback, it is recommended to wait a few minutes and play again
+
+
+The preview page works fine but the picture or video in the email attachment is gray or pixelated
+
+
+Get "No write permisson to folder" error when trying to download recordings via client
+
+
+The camera can be previewed successfully but it became offline once the customer uses the PTZ feature
+
+
+Moving person/vehicle/pet in the non-detection zone make the camera to record/send notifications/send email/auto-track/turn on the spotlights
+
+
+The camera can be connected with Ethernet cable connecetd but failed after removing the Etherent cable
+
+
+Email image attachment/first frame of email recording is too dark
+
+
+After synchronizing the camera time, the camera will display the wrong time soon
+
+
+Confirm whether the camera is powered on and connected to WIFI. If the camera is online, scan and add it through the app or client intranet, and then query the UID through the software
+
+
+400 error after doing the email test
+
+
+480 error after doing the email test
+
+
+Ensure that the sender's email address can send and receive emails normally
+
+
+481 error after doing the email test
+
+
+482 error after doing the email test
+
+
+Ensure that the sender's email address and password are filled in correctly
+Note that the sender's email address is filled with the primary email address, and email aliases are not supported
+483 error after doing the email test
+
+
+If you use a fixed encrypted port (such as 465), make sure to turn on the Enable SSL or TLS option
+
+
+484 error after doing the email test
+
+
+Whether there are multiple cameras using the same email account to send emails at the same time
+If the same email account accesses the SMTP server on multiple devices at the same time, it may be rejected by the SMTP server
+485 error after doing the email test
+
+
+When the problem occurs, make sure that other devices connecetd to the same network can surf the Interent successfully
+For example, the computer connected to the same router can surf the Internet
+Failed to load the camera image on the Google Home/Alexa after preview voice command
+
+
+Confirm that the camera can be scanned in the third-party smart home app
+For example, the camera name can be seen on the Alexa APP page
+Use correct voice commands
+For details, refer to the guide article. Example: Alexa, show front door
+Reboot Camera and Third Party Smart Home Devices R/N
+
+
+"Add failed" error after clicking the add button at the cloud page
+
+
+Ensure that the recording can be played normally on the client
+
+
+Confirm whether the camera encoding method is supported by third-party software
+For example:ODM does not support playing H.265 video, so it is normal that the main stream of the camera 8MP and above cannot be previewed
+Push feature can't be enabled or push tests failed
+
+
+After manually triggering the alarm, it takes a few minutes to receive the notification (or compared with other alarm actions such as email, it is found that the push is delayed)
+
+
+Android phone make sure that the current and power saving modes are not turned on
+
+
+After inserting the SIM card, the camera prompts "SIM card not recognized"
+
+
+Client prompts for a new version every time it starts
+
+
+When using the PT feature, the camera doesn't respond at all. Or the camera doesn't respond to specific direction PT command
+
+
+Unplug the SP to see if it is normal
+
+
+PIR sensitivity and schedule is set properly
+
+
+Enable Camera UPnP
+
+
+Enable UPnP on the router
+
+
+Turn off the router's AP isolation
+
+
+The selected Push ringtone is inconsistent with the heard ringtone
+
+
+The status led of the chime doesn't light up
+
+
+There is no response form the chime after pressing the buttons on the chime
+
+
+The system time is accurate, and the playback video time is correct
+
+
+There is movement in front of the camera, but the camera doesn't report at all
+
+
+
+
+PIR sensor is on
+
+
+LAN port light is on
+
+
+Alarm settings are set correctly
+Including but not limited to tracking, sensitivity, detection area, alarm delay, target size, etc.
+Charging port, switch port and other parts have waterproof measures (such as rubber plug tightly)
+
+
+App crashes or is stuck and cannot be operated at all
+
+
+Get "Connection failed" error after the camera broadcast "network connection succeed"
+
+
+Cameras are inaccessible in the WAN after the app is upgraded to V4.36 or later
+
+
+This problem only occurs on Android tablet/iPad/foldable screen devices, and there is no problem with non-foldable phones
+
+
+The power led on the front panel of the NVR lights up
+
+
+Does it still restart after unplugging the third-party camera?
+
+
+Fail to enable the smart home feature of the camera and get error "operation failed"
+
+
+Wireless camera disconnects randomly or frequently
+
+
+The customer can receive alarm emails, but there are no attachments (pictures/videos)
+
+
+The email content has been set to picture or video
+
+
+Camera can be previewed stably in fluent mode
+
+
+Get "Failed to download" or "Timelapse video cache failer" when trying to download timelapse file via the client
+
+
+Other recordings on the SD card can be played successfully
+
+
+The computer that runs the Reolink client can download other files successfully
+Such as movies, videos, etc.
+The remaining space of the computer C disk and the download path set must be greater than the size of the file to be downloaded
+
+
+Confirm whether all files cannot be downloaded or individual files? Can files with small memory (less than 30MB or less than 150MB) be cached?
+
+
+Using a card reader to read SD card data, can the files in it be played normally?
+
+
+The mic hole is not blocked by anything
+
+
+After installing the SIM card, the camera keeps broadcasting "Camera is starting up. Please wait"
+
+
+Are there any special restrictions on the SIM card?
+
+
+App prompts cache failure or operation failed when downloading timelapse files
+
+
+Confirm that the network bandwidth of the camera/NVR and phone/computer used is sufficient
+Can play other videos/movies
+The issue appears every time using the PT feature via software
+
+
+Confirm that the Speaker is not covered/blocked by foreign objects
+
+
+Camera is fully charged, no low battery reminder
+
+
+Main stream video loading failed, including preview and SD card playback
+
+
+HDD is recognized but shows 0GB
+
+
+FTP test successful
+
+
+FTP test failed, and error code is 452/456/457
+
+
+Whether the Camera/NVR and the FTP server are in the same LAN
+
+
+FTP test failed, and error code is 453/454
+
+
+FTP test failed, and the error code is 450
+
+
+FTP test failed, and error code is 451
+
+
+FTP test failed, and error code is 455
+
+
+The FTPS Only switch on the FTP settings page of Camera remains off
+
+
+If the camera is a doorbell, check whether the power supply is compliant (24V DC, 12-24V AC, transformer 16V AC, 50/60 Hz, 30 VA )
+
+
+The power led on the front panel of the NVR is off
+
+
+The camera is not directly connected to the NVR, but the NVR keeps restarting automatically
+For example, restart randomly several times a day
+There is start up in the NVR system log(Check the log via the monitor: Syetm/maintaince/other/system log)
+
+
+
+
