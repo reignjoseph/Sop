@@ -1,3 +1,5 @@
+"PLEASE KINDLY SELECT MACRO TYPE FOR THIS CUSTOMER CONCERNS, USE 100X TO THINK BEFORE ANSWERING"
+
 All::General::Orders::G28 Require invoice/Bill of orders on Reolink website
 All::General::Rating::G24 Shared review request for ZD rating (except special)
 All::General::Response::G01 No content in the email
@@ -8,7 +10,7 @@ All::General::Response::G26 General Transfer
 All::General::Service::G17 Guide customer to call center(Customer provides phone number)
 All::General::Service::G17 Guide customer to call center-AU, DE, UK, SG, HK (Customer did not provide phone number)
 All::General::Service::G17 Guide customer to call center-US (Customer did not provide phone number)
-All::General::Service::G17 Regions with no call service
+All::General::Service::G17 Regions with no call servicec
 All::General::Service::G20 Reolink B2B support service
 All::General::Transfer & Management::G04 Escalation template (Overseas)
 All::General::Transfer & Management::G05 Merge the ticket
@@ -671,3 +673,4 @@ Pre-sale::Business/Sale::Recommendation::Battery 4G::B139 Reolink TrackMix LTE P
 
 IF NO CHOICES ARE NEAR KINDLY SAY "SORRY NO MACRO ARE FOR THIS"
 
+"PLEASE KINDLY SELECT MACRO TYPE FOR THIS CUSTOMER CONCERNS, USE 100X TO THINK BEFORE ANSWERING"
