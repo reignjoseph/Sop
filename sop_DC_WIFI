@@ -1,0 +1,85 @@
+DC WIFI::Alert::Auto tracking doesn't work properly
+DC WIFI::Alert::Motion Detection doesn't work occassionally
+DC WIFI::Alert::Motion Detection False Alerts
+DC WIFI::Alert::No attachment for Email Alerts
+DC WIFI::Alert::Non-Detection Area Smart detection False alert
+DC WIFI::Alert::Smart detection doesn't work
+DC WIFI::Alert::Smart detection False Alerts
+DC WIFI::Audio::Audio Noise
+DC WIFI::Audio::Low sound on the App side while using 2-way audio
+DC WIFI::Audio::Low volume on the camera side when using Two-way audio on Android devices
+DC WIFI::Audio::Speaker no sound output
+DC WIFI::Audio::Two-way audio with echo/noise
+DC WIFI::Firmware and others::Camera with factory firmware broadcasts Chinese voice and displays abnormal OSD
+DC WIFI::Firmware and others::Device automatically reverts to factory settings
+DC WIFI::Firmware and others::Doorbell is noisy/vibrating/there is no sound until the doorbell is pressed several times
+DC WIFI::Firmware and others::Firmware upgrade failed
+DC WIFI::Firmware and others::Firmware upgrade failed (transmission timed out)
+DC WIFI::Firmware and others::Incorrect Time/Date on Screen
+DC WIFI::Firmware and others::PTZ/spotlight/two-way voice/Audio cannot be turned on/off
+DC WIFI::Firmware and others::QR code is invalid
+DC WIFI::Firmware and others::SIM card or SD card slot problem
+DC WIFI::Firmware and others::Software reports latest version despite new firmware release online
+DC WIFI::Firmware and others::Some configurations did not persist after saving
+DC WIFI::Firmware and others::UID tag missing
+DC WIFI::Hardware::Camera not powered
+DC WIFI::Hardware::Day and night mode does not auto switch
+DC WIFI::Hardware::Doorbell button stuck
+DC WIFI::Hardware::Physical damage to camera itself
+DC WIFI::Hardware::Some IR lights/spotlights are off or dim
+DC WIFI::Hardware::Spotlights automatically switch on/off repeatedly
+DC WIFI::Hardware::Spotlights cannot be turned on
+DC WIFI::Hardware::Unable to reset
+DC WIFI::Hardware::Water or fog in Camera
+DC WIFI::Hardware::When the light comes on, it goes offline
+DC WIFI::Initial setup::After scanning the WiFi QR code, it prompts that "QR code does not match"
+DC WIFI::Initial setup::Camera failed to scan the WiFi QR code
+DC WIFI::Initial setup::Camera prompts "Connection to the router failed" during the initial setup
+DC WIFI::Initial setup::Failed to obtain configuration information
+DC WIFI::Initial setup::Incorrect username and password/Authentication failed/Ask for a password even after reset
+DC WIFI::Initial setup::Initial setup issue (Exclusive to Bluetooth pairing method)
+DC WIFI::Initial setup::Voice Broadcast Router connected successfully but access failed
+DC WIFI::Initial setup::Wired connection but access failed (For cameras with Ethernet port)
+DC WIFI::Network::Accessible in LAN and inaccessible in WAN
+DC WIFI::Network::Accessible when camera is connected to the router via cable but inaccessible when camera connected via WiFi
+DC WIFI::Network::Camera remains offline after router resumes
+DC WIFI::Network::Dual-band WiFi camera can only connect to 2.4Ghz, but not to 5Ghz, vice versa
+DC WIFI::Network::Inaccessible in LAN and accessible in WAN
+DC WIFI::Network::The camera frequently sends DHCP requests
+DC WIFI::Network::WAN connection failed (intermittent)
+DC WIFI::Network::WiFi disconnection/Connection difficulties/Auto restart
+DC WIFI::Playback::Playback page video cannot be loaded
+DC WIFI::Playback::Recordings loaded successfully but failed to playback
+DC WIFI::Preview::Can't load the preview screen
+DC WIFI::Preview::E1 series IR lights switch on/off repeatedly (only for AI models)
+DC WIFI::Preview::Fixed-lens camera image is out of focus
+DC WIFI::Preview::Image color cast/Night vision screen is completely black
+DC WIFI::Preview::Image is flashing or flicking
+DC WIFI::Preview::Image is ghosting or smearing
+DC WIFI::Preview::Image overexposure
+DC WIFI::Preview::Image pixilation
+DC WIFI::Preview::Image stitching issue
+DC WIFI::Preview::Inconsistent brightness between the two lenses
+DC WIFI::Preview::IR light is abnormal
+DC WIFI::Preview::IR lights don't light up during the night
+DC WIFI::Preview::Live view has lines or black dots
+DC WIFI::Preview::Microphone doesn't work/No sound in preview & playback
+DC WIFI::Preview::Night Vision Reflective
+DC WIFI::Preview::No picture in preview
+DC WIFI::Preview::Preview Delay/Freezes
+DC WIFI::Preview::Unable to preview the main stream
+DC WIFI::Preview::Vertical angle of view is narrow (Exclusive to Duo 3 PoE/WiFi)
+DC WIFI::Preview::Zoom camera image is out of focus (with attempt to focus)
+DC WIFI::Preview::Zoom camera image is out of focus (without attempt to focus)
+DC WIFI::PTZ::Monitor point/preset point deviation
+DC WIFI::PTZ::PT angle becomes smaller
+DC WIFI::PTZ::PT no response
+DC WIFI::PTZ::Self-test stuck/camera makes noise when using PTZ feature
+DC WIFI::PTZ::The camera gets disconnected once using the PTZ feature
+DC WIFI::SD card::Camera not recording to SD card
+DC WIFI::SD card::Camera stops recording when SD card is full
+DC WIFI::SD card::Continuous recording failed
+DC WIFI::SD card::Lumus stops recording or doesn't record at all when using a 256GB or larger SD card
+DC WIFI::SD card::Motion-based recording failed
+DC WIFI::SD card::SD card cannot be formatted
+DC WIFI::SD card::SD card not recognized
