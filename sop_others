@@ -136,11 +136,6 @@ read this --->""
 read this --->""
 >Others::unincluded
 
-
-read this --->"Please restore or reset the device as appropriate. If you can still access the device in the Reolink app, please perform a Restore; otherwise, please Reset the device. How to Restore Reolink Cameras/NVRs via Reolink App"
->Others::unincluded::NVR gets stuck or restarts after clicking Settings on the monitor
-
-
 read this --->""
 >Reolink Software::App::"Scene setup failed" when attempting to enable Push via Shortcuts
 read this --->""
