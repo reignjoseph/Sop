@@ -105,4 +105,12 @@ read this --->"description There are recordings saved but cannot be played on th
 read this --->"description There are recordings in the timeline but failed to play the recordings via the software"
 >NVR::Playback::Recordings loaded successfully but failed to playback via the Reolink app/client
 
+
+read this --->"Please restore or reset the device as appropriate. If you can still access the device in the Reolink app, please perform a Restore; otherwise, please Reset the device. How to Restore Reolink Cameras/NVRs via Reolink App"
+>Others::unincluded::NVR gets stuck or restarts after clicking Settings on the monitor
+
+read this --->"IF IT MUST TO BE PROBE BEFORE SELECT PROPER, E.G NEED PROVIDE VIDEO DIRECTLY TO CONCERN, ASK POSSIBLE PROBE E.G IS CAMERA NOT ON?/ABOUT NETWORK?/ABOUT CONFIG SETTINGS(etc. PT/MD DETECT/PIR DETECT/?/SOMETHING ON APPEARANCE?)/JUST USE BRAIN TO PROBE THINK SMART AND WISELY."
+>Others::unclear
+
+
 “Read the following SOP mapping carefully. Each read this --->"description ..." explains a camera behavior or customer scenario. The line following > is the corresponding SOP label to follow. Understand that my goal is to use these descriptions to correctly assign SOPs when handling tickets or troubleshooting. Do not change wording, do not interpret beyond what is written, and treat each description line by line. Confirm understanding by summarizing each SOP with its description and label.”
